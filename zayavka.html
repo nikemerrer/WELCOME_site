@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="zayavka.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="centered">
+        <!-- Бургерное меню -->
+        <div class="burger-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="burger-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+            <div class="burger-dropdown">
+                <a href="#">О нас</a>
+                <a href="#">Медиа о нас</a>
+                <a href="#">Услуги</a>
+                <a href="#">Новости</a>
+                <a href="#">FAQ</a>
+                <a href="#">Контакты</a>
+                <a href="#">Подать заявку</a>
+            </div>
+            <div class="topmid">
+                <svg width="185" height="43" viewBox="0 0 185 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M56.7867 7.30276V15.5018H56.1144C55.9637 12.631 54.4761 7.97121 48.5838 7.97121H45.7864V19.6013C48.6572 19.7134 51.0798 17.6617 51.0798 14.3813H51.7521V25.5632H51.0798C51.1184 22.2094 48.6185 20.1577 45.7864 20.2698V32.719H48.7692C55.5889 32.719 57.5285 27.3135 57.6019 23.697H58.2743V33.3875H36.6561V32.7152H40.5702V7.97507H36.6561V7.30276H56.7828H56.7867Z" fill="#0C13A1"/>
+                    <path d="M72.81 7.30276V7.97507H68.525V32.7267H71.1331C77.918 32.7267 79.8924 26.8383 79.9658 22.9629H80.6381V33.3991H59.3909V32.7267H63.305V7.97507H59.3909V7.30276H72.81Z" fill="#0C13A1"/>
+                    <path d="M101.588 15.8767C100.842 12.1133 98.458 7.22947 94.3199 7.22947C88.6169 7.22947 88.0219 14.9842 88.0219 21.0195C88.0219 25.3044 88.5048 33.4687 94.5092 33.4687C97.8282 33.4687 101.777 29.6667 102.708 24.0758H103.381V33.9903H102.708C102.596 33.4301 102.26 32.7616 101.255 32.7616C100.398 32.7616 99.8761 33.1712 98.3499 33.5808C97.5307 33.8396 96.1127 34.141 94.3972 34.141C87.3882 34.141 81.7625 27.8778 81.7625 20.5365C81.7625 13.6396 87.3148 6.55716 94.3972 6.55716C98.3499 6.55716 98.7942 8.0486 100.471 8.0486C100.695 8.0486 101.476 7.86313 101.588 6.85467H102.26V15.8767H101.588Z" fill="#0C13A1"/>
+                    <path d="M105.61 20.351C105.61 11.2169 112.692 6.561 117.723 6.561C122.754 6.561 129.836 11.2208 129.836 20.351C129.836 29.4812 122.754 34.141 117.723 34.141C112.692 34.141 105.61 29.4812 105.61 20.351ZM123.577 20.351C123.577 8.94498 120.969 7.22945 117.723 7.22945C114.477 7.22945 111.869 8.94498 111.869 20.351C111.869 31.757 114.477 33.4726 117.723 33.4726C120.969 33.4726 123.577 31.757 123.577 20.351Z" fill="#0C13A1"/>
+                    <path d="M141.764 7.30276L147.915 24.4504L152.575 7.30276H162.265V7.97507H158.351V32.7267H162.265V33.399H149.221V32.7267H153.135V8.42327L146.014 34.5157H145.863L136.358 8.42327V32.7267H140.311V33.399H131.702V32.7267H135.616V7.97507H131.702V7.30276H141.768H141.764Z" fill="#0C13A1"/>
+                    <path d="M183.513 7.30276V15.5018H182.84C182.69 12.631 181.202 7.97121 175.31 7.97121H172.512V19.6013C175.383 19.7134 177.806 17.6617 177.806 14.3813H178.478V25.5632H177.806C177.844 22.2094 175.344 20.1577 172.512 20.2698V32.719H175.495C182.315 32.719 184.254 27.3135 184.328 23.697H185V33.3875H163.382V32.7152H167.296V7.97507H163.382V7.30276H183.509H183.513Z" fill="#0C13A1"/>
+                    <path d="M39.0324 0L30.5899 23.6041L24.0098 7.97494H27.7848L27.7655 7.29877H15.0187V7.97494H18.0209L20.826 14.5744L16.684 26.2083L9.01044 7.97494H12.032L12.0165 7.29877H0V7.97494H3.02151L14.3232 34.7126H14.47L21.282 15.6369L27.8582 31.239L24.0446 41.9032L24.6396 42.1157L39.7047 0H39.0324Z" fill="#0C13A1"/>
+                    </svg>
+                    
+            </div>
+        </div>
+        <!-- Основное меню для больших экранов -->
+        <div class='tophead'>
+            <div class="topleft">
+                <div class="two_top_left_words">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a>О нас</a>
+                            <svg
+                            width="16" 
+                            height="11"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24"
+                            fill-rule="evenodd" 
+                            clip-rule="evenodd">
+                            <path d="M23.245 4l-11.245 
+                            14.374-11.219-14.374-.781.619 
+                            12 15.381 12-15.391-.755-.609z"/>
+                           </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">О нас</a>
+                            <a href="#">Медиа о нас</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two_top_left_words">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a>Услуги</a>
+                            <svg
+                            width="16" 
+                            height="11"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24"
+                            fill-rule="evenodd" 
+                            clip-rule="evenodd">
+                            <path d="M23.245 4l-11.245 
+                            14.374-11.219-14.374-.781.619 
+                            12 15.381 12-15.391-.755-.609z"/>
+                           </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Разрешение на временное проживание в РФ</a>
+                            <a href="#">Вид на жительство</a>
+                            <a href="#">Гражданство РФ</a>
+                            <a href="#">Гражданство РФ по упрощенной схеме</a>
+                            <a href="#">Переселение по программе соотечественников</a>
+                            <a href="#">Клиент-сервис</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_left_word">
+                    <a href="#">Новости</a>
+                </div>
+            </div>
+            <div class="topmid">
+                <svg width="185" height="43" viewBox="0 0 185 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M56.7867 7.30276V15.5018H56.1144C55.9637 12.631 54.4761 7.97121 48.5838 7.97121H45.7864V19.6013C48.6572 19.7134 51.0798 17.6617 51.0798 14.3813H51.7521V25.5632H51.0798C51.1184 22.2094 48.6185 20.1577 45.7864 20.2698V32.719H48.7692C55.5889 32.719 57.5285 27.3135 57.6019 23.697H58.2743V33.3875H36.6561V32.7152H40.5702V7.97507H36.6561V7.30276H56.7828H56.7867Z" fill="#0C13A1"/>
+                    <path d="M72.81 7.30276V7.97507H68.525V32.7267H71.1331C77.918 32.7267 79.8924 26.8383 79.9658 22.9629H80.6381V33.3991H59.3909V32.7267H63.305V7.97507H59.3909V7.30276H72.81Z" fill="#0C13A1"/>
+                    <path d="M101.588 15.8767C100.842 12.1133 98.458 7.22947 94.3199 7.22947C88.6169 7.22947 88.0219 14.9842 88.0219 21.0195C88.0219 25.3044 88.5048 33.4687 94.5092 33.4687C97.8282 33.4687 101.777 29.6667 102.708 24.0758H103.381V33.9903H102.708C102.596 33.4301 102.26 32.7616 101.255 32.7616C100.398 32.7616 99.8761 33.1712 98.3499 33.5808C97.5307 33.8396 96.1127 34.141 94.3972 34.141C87.3882 34.141 81.7625 27.8778 81.7625 20.5365C81.7625 13.6396 87.3148 6.55716 94.3972 6.55716C98.3499 6.55716 98.7942 8.0486 100.471 8.0486C100.695 8.0486 101.476 7.86313 101.588 6.85467H102.26V15.8767H101.588Z" fill="#0C13A1"/>
+                    <path d="M105.61 20.351C105.61 11.2169 112.692 6.561 117.723 6.561C122.754 6.561 129.836 11.2208 129.836 20.351C129.836 29.4812 122.754 34.141 117.723 34.141C112.692 34.141 105.61 29.4812 105.61 20.351ZM123.577 20.351C123.577 8.94498 120.969 7.22945 117.723 7.22945C114.477 7.22945 111.869 8.94498 111.869 20.351C111.869 31.757 114.477 33.4726 117.723 33.4726C120.969 33.4726 123.577 31.757 123.577 20.351Z" fill="#0C13A1"/>
+                    <path d="M141.764 7.30276L147.915 24.4504L152.575 7.30276H162.265V7.97507H158.351V32.7267H162.265V33.399H149.221V32.7267H153.135V8.42327L146.014 34.5157H145.863L136.358 8.42327V32.7267H140.311V33.399H131.702V32.7267H135.616V7.97507H131.702V7.30276H141.768H141.764Z" fill="#0C13A1"/>
+                    <path d="M183.513 7.30276V15.5018H182.84C182.69 12.631 181.202 7.97121 175.31 7.97121H172.512V19.6013C175.383 19.7134 177.806 17.6617 177.806 14.3813H178.478V25.5632H177.806C177.844 22.2094 175.344 20.1577 172.512 20.2698V32.719H175.495C182.315 32.719 184.254 27.3135 184.328 23.697H185V33.3875H163.382V32.7152H167.296V7.97507H163.382V7.30276H183.509H183.513Z" fill="#0C13A1"/>
+                    <path d="M39.0324 0L30.5899 23.6041L24.0098 7.97494H27.7848L27.7655 7.29877H15.0187V7.97494H18.0209L20.826 14.5744L16.684 26.2083L9.01044 7.97494H12.032L12.0165 7.29877H0V7.97494H3.02151L14.3232 34.7126H14.47L21.282 15.6369L27.8582 31.239L24.0446 41.9032L24.6396 42.1157L39.7047 0H39.0324Z" fill="#0C13A1"/>
+                    </svg>
+                    
+            </div>
+            <div class="topright">
+                <div class="top_right_words">
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="top_right_words">
+                    <a href="#">Контакты</a>
+                </div>
+                <a href="#"><div class="zayavka">
+                    <div class="text_in_zayavka">
+                        Подать заявку
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="topunhead">
+            <div class="topunheaddiv">
+                <input type="checkbox" id="toggle-search" class="toggle-search">
+                <label for="toggle-search">
+                    <svg class="lupa"
+                        clip-rule="evenodd" 
+                        fill-rule="evenodd" 
+                        stroke-linejoin="round" 
+                        stroke-miterlimit="2" 
+                        viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m15.97 17.031c-1.479 1.238-3.384 
+                        1.985-5.461 1.985-4.697 0-8.509-3.812-8.509-8.508s3.812-8.508 
+                        8.509-8.508c4.695 0 8.508 3.812 8.508 8.508 0 2.078-.747 
+                        3.984-1.985 5.461l4.749 4.75c.146.146.219.338.219.531 
+                        0 .587-.537.75-.75.75-.192 0-.384-.073-.531-.22zm-5.461-13.53c-3.868 
+                        0-7.007 3.14-7.007 7.007s3.139 7.007 7.007 7.007c3.866 
+                        0 7.007-3.14 7.007-7.007s-3.141-7.007-7.007-7.007z" 
+                        fill-rule="nonzero"/>
+                    </svg>
+                </label>
+        
+                <!-- Поле для поиска -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск...">
+                    <button type="submit">Искать</button>
+                </div>
+        
+                <div class="rus_flag"></div>
+                <div class="choose_country">
+                    <div class="dropdown">
+                        <button class="dropbtnrus">
+                            <a>Russian</a>
+                            <svg
+                                class="strel_choose_country"
+                                width="16" 
+                                height="11"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 24 24"
+                                fill-rule="evenodd" 
+                                clip-rule="evenodd">
+                                <path d="M23.245 4l-11.245 
+                                14.374-11.219-14.374-.781.619 
+                                12 15.381 12-15.391-.755-.609z"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">English</a>
+                            <a href="#">Spanish</a>
+                            <a href="#">Chinees</a>
+                            <a href="#">Japanees</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div class="road">
+    <a href="./index.html">Главная</a>
+    <svg class="strinroad" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.65625 1.34314L6.3131 6.99999L0.65625 12.6568" stroke="#878787"/>
+    </svg>        
+    <a href="#">Подать заявку</a>
+</div>
+
+
+
+<div class="podati_zayavka">
+    <div class="grid_zayavka">
+        <div class="tag">
+            ФОРМА ЗАЯВКИ
+        </div>
+        <div class="forma_zayavki">
+            <div class="block1">
+                <div class="tag_in_forma">
+                    Личные данные
+                </div>
+                <div class="personal_dan">
+                    <div class="zapolnite_personal_dan">
+                        <div class="name">
+                            <label for="first_name">Имя</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Введите имя" required>
+                        </div>
+                        <div class="surename">
+                            <label for="second_name">Фамилия</label>
+                            <input type="text" id="second_name" name="second_name" placeholder="Введите фамилию" required>
+                        </div>
+                        <div class="grazdanstvo">
+                            <label for="select_grazdanstvo">
+                                Гражданство
+                            </label>
+                            <select id="select_grazdanstvo">
+                                <option value="Россия">Россия</option>
+                                <option value="Украина">Украина</option>
+                                <option value="Беларусь">Беларусь</option>
+                            </select>
+                        </div>
+                        <div class="choose_d_roz">
+                            <div class="text">Дата рождения</div>
+                            <div class="data_rozdenia">
+                                <div class="day">
+                                    <label for="select_day"></label>
+                                    <select id="select_day">
+
+                                    </select>
+                                </div>
+                                <div class="month">
+                                    <label for="select_month"></label>
+                                    <select id="select_month">
+
+                                    </select>
+                                </div>
+                                <div class="year">
+                                    <label for="select_year"></label>
+                                    <select id="select_year">
+
+                                    </select>
+                                </div>
+                            </div>
+                        <script>
+                            // Заполняем дни (1 - 31)
+                            const daySelect = document.getElementById("select_day");
+                            for (let day = 1; day <= 31; day++) {
+                                let option = document.createElement("option");
+                                option.value = day;
+                                option.text = day;
+                                daySelect.appendChild(option);
+                            }
+                            
+                            // Заполняем месяцы (1 - 12)
+                            const monthSelect = document.getElementById("select_month");
+                            const monthNames = [
+                                "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+                                "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+                            ];
+                            monthNames.forEach((month, index) => {
+                                let option = document.createElement("option");
+                                option.value = index + 1; // Нумерация месяцев с 1
+                                option.text = month;
+                                monthSelect.appendChild(option);
+                            });
+                            
+                            // Заполняем годы (текущий год - 100 лет назад)
+                            const yearSelect = document.getElementById("select_year");
+                            const currentYear = new Date().getFullYear();
+                            for (let year = currentYear; year >= currentYear - 100; year--) {
+                                let option = document.createElement("option");
+                                option.value = year;
+                                option.text = year;
+                                yearSelect.appendChild(option);
+                            }
+                            </script>
+                    </div>
+                        <div class="spawn">
+                            <label for="insert_spawn">Место рождения</label>
+                            <input type="text" id="insert_spawn" placeholder="Введите город и страну">
+                        </div>
+                        <div class="obychenie">
+                            <label for="insert_obychenie">Образование</label>
+                            <input type="text" id="insert_obychenie" placeholder="Введите степень образования">
+                        </div>
+                    </div>     
+                    <div class="about_u">
+                        <label for="insert_about_u">
+                            Расскажите немного о себе
+                        </label>
+                        <textarea id="insert_about_u" rows="5"></textarea>
+                    </div>
+                     
+                </div>
+            </div>
+            <div class="upload_photo">
+                <svg class="upload_photo_svg" width="201" height="140" viewBox="0 0 201 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="200" height="139" fill="#F5F5F5"/>
+                    <rect x="0.5" y="0.5" width="200" height="139" stroke="#B6B8BF"/>
+                    <g clip-path="url(#clip0_1109_2586)">
+                    <path d="M85.5 56.6667V51.6667H88.8333V56.6667H93.8333V60H88.8333V65H85.5V60H80.5V56.6667H85.5ZM90.5 66.6667V61.6667H95.5V56.6667H107.167L110.217 60H118.833V86.6667H85.5V66.6667H90.5ZM102.167 81.6667C106.767 81.6667 110.5 77.9333 110.5 73.3333C110.5 68.7333 106.767 65 102.167 65C97.5667 65 93.8333 68.7333 93.8333 73.3333C93.8333 77.9333 97.5667 81.6667 102.167 81.6667ZM97.1667 73.3333C97.1667 76.1 99.4 78.3333 102.167 78.3333C104.933 78.3333 107.167 76.1 107.167 73.3333C107.167 70.5667 104.933 68.3333 102.167 68.3333C99.4 68.3333 97.1667 70.5667 97.1667 73.3333Z" fill="#B6B8BF"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1109_2586">
+                    <rect width="40" height="40" fill="white" transform="translate(80.5 50)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                <div class="upload_photo_text">
+                    <div class="upload_photo_text_up">
+                        Загрузите фотографию
+                    </div>
+                    <div class="upload_photo_text_down">
+                        jpeg, png до 5 мб
+                    </div>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="tag_in_forma">Владение языками</div>
+            
+                <div class="known_language">
+                    <div class="known_language_top">
+                        <div class="rodnoi">
+                            <label for="native_language">Родной язык</label>
+                            <select id="native_language">
+                                <option value="" disabled selected>Не выбран</option>
+                                <option value="ru">Русский</option>
+                                <option value="en">Английский</option>
+                                <option value="de">Немецкий</option>
+                                <!-- Добавь больше языков по мере необходимости -->
+                            </select>
+                        </div>
+            
+                        <div class="know_russian">
+                            <label for="russian_level">Знание русского языка</label>
+                            <select id="russian_level">
+                                <option value="" disabled selected>Не выбрано</option>
+                                <option value="beginner">Начальный</option>
+                                <option value="intermediate">Средний</option>
+                                <option value="advanced">Продвинутый</option>
+                                <option value="native">Родной</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="know_in_language">
+                    <label for="foreign_languages">Знание иностранных языков</label>
+                    <input type="text" id="foreign_languages" placeholder="Напишите все языки, которые знаете">
+                </div>
+            </div>
+            <div class="block3">
+                <div class="tag_in_forma">
+                    Семья
+                </div>
+                <div class="family">
+                    <label for="family_person">Состав семьи</label>
+                    <input type="text" id="family_person" placeholder="Укажите членов семьи">
+
+                </div>
+                <div class="family_in_russian">
+                    <label for="family_in_ru">Наличие родственников в России</label>
+                    <select id = "family_in_ru">
+                        <option value="" disabled selected>Не выбрано</option>
+                        <option value="yes">Да</option>
+                        <option value="no">Нет</option>
+                    </select>
+                </div>
+            </div>
+            <div class="block4">
+                <div class="tag_in_forma">
+                    Карьера
+                </div>
+                <div class="career">
+                    <label for="work_in_russia" class="work_in_russia">
+                        Собираетесь ли работать на территории России? Имеется ли договоренность о трудоустройстве? Если да, то с какой компанией?
+                    </label>
+                    <textarea id="work_in_russia" rows="4"></textarea>
+                </div>
+                
+                <div class="second_row_in_4">
+                    <div class="expected_salary">
+                        <div class="salary_front">Ожидаемый уровень заработка</div>
+                        <div class="salary_range">
+                            <input class="salary" type="text" id="salary_from" placeholder="От">
+                            <input class="salary" type="text" id="salary_to" placeholder="До">
+                            <select class="salary" id="currency">
+                                <option value="RUB">₽</option>
+                                <option value="USD">$</option>
+                                <option value="EUR">€</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <div class="business_in_russia">
+                        <label for="business_russia">Собираетесь ли открывать бизнес в России?</label>
+                        <select id="business_russia">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="yes">Да</option>
+                            <option value="no">Нет</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="current_job">
+                    <label for="current_job_position">Кем и где работаете в настоящий момент?</label>
+                    <input type="text" id="current_job_position">
+                </div>
+            </div>
+            
+            <div class="block5">
+                <div class="tag_in_forma">
+                    Дополнительные вопросы
+                </div>
+                <div class="dop_qastions">
+                    <div class="q">
+                        <label for="qastion_01">Собираетесь ли вы учиться на территории России?</label>
+                        <select id="qastion_01">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="yes">Да</option>
+                            <option value="no">Нет</option>
+                            <option value="undecided">Еще не решил(а)</option>
+                        </select>
+                    </div>
+        
+                    <!-- Вопрос 2 -->
+                    <div class="q">
+                        <label for="qastion_02">Бывали ли вы ранее на территории России?</label>
+                        <select id="qastion_02">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="many">Да, много раз</option>
+                            <option value="few">Да, один или несколько раз</option>
+                            <option value="none">Нет, ни разу</option>
+                        </select>
+                    </div>
+        
+                    <!-- Вопрос 3 -->
+                    <div class="q">
+                        <label for="qastion_03">Готовы ли вы инвестировать в покупку жилья на территории России?</label>
+                        <select id="qastion_03">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="yes">Да, готов(а)</option>
+                            <option value="maybe">Возможно, в будущем</option>
+                            <option value="no">Нет, не готов(а)</option>
+                        </select>
+                    </div>
+        
+                    <!-- Вопрос 4 -->
+                    <div class="q">
+                        <label for="qastion_04">Собираетесь ли вы постоянно находиться на территории России?</label>
+                        <select id="qastion_04">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="yes">Да, планирую постоянное проживание</option>
+                            <option value="temporary">Возможно, временное проживание</option>
+                            <option value="no">Нет, не собираюсь</option>
+                        </select>
+                    </div>
+        
+                    <!-- Вопрос 5 -->
+                    <div class="q">
+                        <label for="qastion_05">Цель визита – создание семьи?</label>
+                        <select id="qastion_05">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="yes">Да, основная цель – создание семьи</option>
+                            <option value="no">Нет, другая цель</option>
+                            <option value="maybe">Возможно, но это не основная цель</option>
+                        </select>
+                    </div>
+        
+                    <!-- Вопрос 6 -->
+                    <div class="q">
+                        <label for="qastion_06">Наличие судимости</label>
+                        <select id="qastion_06">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="yes">Да</option>
+                            <option value="no">Нет</option>
+                            <option value="prefer_no">Предпочитаю не отвечать</option>
+                        </select>
+                    </div>
+        
+                    <!-- Вопрос 7 -->
+                    <div class="q">
+                        <label for="qastion_07">Наличие гражданства или вида на жительство другой страны</label>
+                        <select id="qastion_07">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="citizenship">Да, гражданство другой страны</option>
+                            <option value="residence">Да, вид на жительство другой страны</option>
+                            <option value="none">Нет, только гражданство России</option>
+                        </select>
+                    </div>
+        
+                    <!-- Вопрос 8 -->
+                    <div class="q">
+                        <label for="qastion_08">Какой регион рассматриваете для проживания в России?</label>
+                        <select id="qastion_08">
+                            <option value="" disabled selected>Не выбрано</option>
+                            <option value="moscow">Москва и Московская область</option>
+                            <option value="spb">Санкт-Петербург и Ленинградская область</option>
+                            <option value="krasnodar">Краснодарский край</option>
+                            <option value="other">Другие регионы</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="block6">
+                <div class="tag_in_forma">
+                    Контакты
+                </div>
+                <div class="block_contact">
+                    <div class="phone_number">
+                        <div class="phone_region">
+                            <div>
+                            <label for="phone_num">Телефон</label>
+                            <select id="phone_num">
+                                <option value="+7">+7</option>
+                                <option value="+1">+1</option>
+                                <option value="+44">+44</option>
+                                <option value="+49">+49</option>
+                                <option value="+33">+33</option>
+                                <option value="+39">+39</option>
+                                <option value="+86">+86</option>
+                                <option value="+91">+91</option>
+                                <option value="+61">+61</option>
+                                <option value="+34">+34</option>
+                            </select>
+                        </div>
+                            <div class="insert_number">
+                                <label for="insert_phone_number">
+                                <input type="text" id="insert_phone_number">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="email">
+                        <label for="insert_email">Электронная почта</label>
+                        <input type="text" id="insert_email" placeholder="Введите почту">
+                    </div>
+                </div>
+            </div>
+            <div class="send_forma">
+                <a href="#">
+                    <div class="block_forma">
+                        <div>Отправить</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- EEENNNDDD -->
+
+<div class="end">
+    <div class="end_with_logo">
+        <div class="end_logo">
+            <svg width="200" height="43" viewBox="0 0 185 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.7867 7.30276V15.5018H56.1144C55.9637 12.631 54.4761 7.97121 48.5838 7.97121H45.7864V19.6013C48.6572 19.7134 51.0798 17.6617 51.0798 14.3813H51.7521V25.5632H51.0798C51.1184 22.2094 48.6185 20.1577 45.7864 20.2698V32.719H48.7692C55.5889 32.719 57.5285 27.3135 57.6019 23.697H58.2743V33.3875H36.6561V32.7152H40.5702V7.97507H36.6561V7.30276H56.7828H56.7867Z" fill="#0C13A1"/>
+                <path d="M72.81 7.30276V7.97507H68.525V32.7267H71.1331C77.918 32.7267 79.8924 26.8383 79.9658 22.9629H80.6381V33.3991H59.3909V32.7267H63.305V7.97507H59.3909V7.30276H72.81Z" fill="#0C13A1"/>
+                <path d="M101.588 15.8767C100.842 12.1133 98.458 7.22947 94.3199 7.22947C88.6169 7.22947 88.0219 14.9842 88.0219 21.0195C88.0219 25.3044 88.5048 33.4687 94.5092 33.4687C97.8282 33.4687 101.777 29.6667 102.708 24.0758H103.381V33.9903H102.708C102.596 33.4301 102.26 32.7616 101.255 32.7616C100.398 32.7616 99.8761 33.1712 98.3499 33.5808C97.5307 33.8396 96.1127 34.141 94.3972 34.141C87.3882 34.141 81.7625 27.8778 81.7625 20.5365C81.7625 13.6396 87.3148 6.55716 94.3972 6.55716C98.3499 6.55716 98.7942 8.0486 100.471 8.0486C100.695 8.0486 101.476 7.86313 101.588 6.85467H102.26V15.8767H101.588Z" fill="#0C13A1"/>
+                <path d="M105.61 20.351C105.61 11.2169 112.692 6.561 117.723 6.561C122.754 6.561 129.836 11.2208 129.836 20.351C129.836 29.4812 122.754 34.141 117.723 34.141C112.692 34.141 105.61 29.4812 105.61 20.351ZM123.577 20.351C123.577 8.94498 120.969 7.22945 117.723 7.22945C114.477 7.22945 111.869 8.94498 111.869 20.351C111.869 31.757 114.477 33.4726 117.723 33.4726C120.969 33.4726 123.577 31.757 123.577 20.351Z" fill="#0C13A1"/>
+                <path d="M141.764 7.30276L147.915 24.4504L152.575 7.30276H162.265V7.97507H158.351V32.7267H162.265V33.399H149.221V32.7267H153.135V8.42327L146.014 34.5157H145.863L136.358 8.42327V32.7267H140.311V33.399H131.702V32.7267H135.616V7.97507H131.702V7.30276H141.768H141.764Z" fill="#0C13A1"/>
+                <path d="M183.513 7.30276V15.5018H182.84C182.69 12.631 181.202 7.97121 175.31 7.97121H172.512V19.6013C175.383 19.7134 177.806 17.6617 177.806 14.3813H178.478V25.5632H177.806C177.844 22.2094 175.344 20.1577 172.512 20.2698V32.719H175.495C182.315 32.719 184.254 27.3135 184.328 23.697H185V33.3875H163.382V32.7152H167.296V7.97507H163.382V7.30276H183.509H183.513Z" fill="#0C13A1"/>
+                <path d="M39.0324 0L30.5899 23.6041L24.0098 7.97494H27.7848L27.7655 7.29877H15.0187V7.97494H18.0209L20.826 14.5744L16.684 26.2083L9.01044 7.97494H12.032L12.0165 7.29877H0V7.97494H3.02151L14.3232 34.7126H14.47L21.282 15.6369L27.8582 31.239L24.0446 41.9032L24.6396 42.1157L39.7047 0H39.0324Z" fill="#0C13A1"/>
+                </svg>
+        </div>
+        <div class="end_name_company">
+            © 2023 «Welcome» agency
+        </div>
+    </div>
+    <div class="agen_yslyg_contact_for_big_dev">
+        <div class="end_agenstvo">
+            <div class="zagolovok_end">
+                Агенство
+            </div>
+            <div class="text_in_end">
+                <a href="#">О нас</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Медиа о нас</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Новости</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        
+        <div class="end_yslugi">
+            <div class="zagolovok_end">
+                Услуги
+            </div>
+            <div class="text_in_end">
+                <a href="#">Разрешение на временное проживание в РФ</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Вид на жительство</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Гражданство РФ</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Упрощенное гражданство РФ</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Переселение по программе соотечественников</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Клиент-сервис</a>
+            </div>
+        </div>
+        <div class="end_contact">
+            <div class="zagolovok_end">
+                Контакты
+            </div>
+            <div class="text_in_end">
+                Пн – Пт: с 9:00 до 18:00
+            </div>
+            <div class="text_in_end">
+                Нижний Новгород,
+                улица Большая Печерская, 44
+            </div>
+            <div class="end_tg_wp">
+                <div class="tg">
+                    <svg 
+                    width="24px" 
+                    height="24px" 
+                    version="1.1"
+                    fill="rgba(170, 170, 170, 9)"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    xml:space="preserve" 
+                    xmlns:serif="http://www.serif.com/" 
+                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                    <path id="telegram-3" d="M19,24l-14,0c-2.761,0 -5,-2.239 -5,-5l0,-14c0,-2.761 2.239,-5 5,-5l14,0c2.762,0 5,2.239 5,5l0,14c0,2.761 -2.238,5 -5,5Zm-2.744,-5.148c0.215,0.153 0.491,0.191 0.738,0.097c0.246,-0.093 0.428,-0.304 0.483,-0.56c0.579,-2.722 1.985,-9.614 2.512,-12.09c0.039,-0.187 -0.027,-0.381 -0.173,-0.506c-0.147,-0.124 -0.351,-0.16 -0.532,-0.093c-2.795,1.034 -11.404,4.264 -14.923,5.567c-0.223,0.082 -0.368,0.297 -0.361,0.533c0.008,0.235 0.167,0.44 0.395,0.509c1.578,0.471 3.65,1.128 3.65,1.128c0,0 0.967,2.924 1.472,4.41c0.063,0.187 0.21,0.334 0.402,0.384c0.193,0.05 0.397,-0.002 0.541,-0.138c0.811,-0.765 2.064,-1.948 2.064,-1.948c0,0 2.381,1.746 3.732,2.707Zm-7.34,-5.784l1.119,3.692l0.249,-2.338c0,0 4.324,-3.9 6.79,-6.124c0.072,-0.065 0.082,-0.174 0.022,-0.251c-0.06,-0.077 -0.169,-0.095 -0.251,-0.043c-2.857,1.825 -7.929,5.064 -7.929,5.064Z"/>
+                    </svg>
+                </div>
+                <div class="wp">
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24"
+                    fill="rgba(170, 170, 170, 9)"
+                    viewBox="0 0 24 24">
+                    <path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="end_for_small_devise">
+    <div class="end_tri">
+        <div class="Agen">
+            <a href="#">Агенство</a>
+        </div>
+        <div class="yslugi">
+            <a href="#">Услуги</a>
+        </div>
+        <div class="kontakti">
+            <a href="#">Контакты</a> 
+        </div>
+    </div>
+    <div class="agen_yslyg_contact">
+        <div class="end_agenstvo">
+            <div class="zagolovok_end">
+                Агенство
+            </div>
+            <div class="text_in_end">
+                <a href="#">О нас</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Медиа о нас</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Новости</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        
+        <div class="end_yslugi">
+            <div class="zagolovok_end">
+                Услуги
+            </div>
+            <div class="text_in_end">
+                <a href="#">Разрешение на временное проживание в РФ</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Вид на жительство</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Гражданство РФ</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Упрощенное гражданство РФ</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Переселение по программе соотечественников</a>
+            </div>
+            <div class="text_in_end">
+                <a href="#">Клиент-сервис</a>
+            </div>
+        </div>
+        
+        <div class="end_contact">
+            <div class="zagolovok_end">
+                Контакты
+            </div>
+            <div class="text_in_end">
+                Пн – Пт: с 9:00 до 18:00
+            </div>
+            <div class="text_in_end">
+                Нижний Новгород,
+                улица Большая Печерская, 44
+            </div>
+            <div class="end_tg_wp">
+                <div class="tg">
+                    <a href="#">
+                    <svg 
+                    width="24px" 
+                    height="24px" 
+                    version="1.1"
+                    fill="rgba(170, 170, 170, 9)"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    xml:space="preserve" 
+                    xmlns:serif="http://www.serif.com/" 
+                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                    <path id="telegram-3" d="M19,24l-14,0c-2.761,0 -5,-2.239 -5,-5l0,-14c0,-2.761 2.239,-5 5,-5l14,0c2.762,0 5,2.239 5,5l0,14c0,2.761 -2.238,5 -5,5Zm-2.744,-5.148c0.215,0.153 0.491,0.191 0.738,0.097c0.246,-0.093 0.428,-0.304 0.483,-0.56c0.579,-2.722 1.985,-9.614 2.512,-12.09c0.039,-0.187 -0.027,-0.381 -0.173,-0.506c-0.147,-0.124 -0.351,-0.16 -0.532,-0.093c-2.795,1.034 -11.404,4.264 -14.923,5.567c-0.223,0.082 -0.368,0.297 -0.361,0.533c0.008,0.235 0.167,0.44 0.395,0.509c1.578,0.471 3.65,1.128 3.65,1.128c0,0 0.967,2.924 1.472,4.41c0.063,0.187 0.21,0.334 0.402,0.384c0.193,0.05 0.397,-0.002 0.541,-0.138c0.811,-0.765 2.064,-1.948 2.064,-1.948c0,0 2.381,1.746 3.732,2.707Zm-7.34,-5.784l1.119,3.692l0.249,-2.338c0,0 4.324,-3.9 6.79,-6.124c0.072,-0.065 0.082,-0.174 0.022,-0.251c-0.06,-0.077 -0.169,-0.095 -0.251,-0.043c-2.857,1.825 -7.929,5.064 -7.929,5.064Z"/>
+                    </svg>
+                </a>
+                </div>
+                <div class="wp">
+                    <a href="#">
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24"
+                    fill="rgba(170, 170, 170, 9)"
+                    viewBox="0 0 24 24">
+                    <path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z"/>
+                    </svg>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end_for_small">
+        <div class="end_logo_small">
+            <svg width="185" height="43" viewBox="0 0 185 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.7867 7.30276V15.5018H56.1144C55.9637 12.631 54.4761 7.97121 48.5838 7.97121H45.7864V19.6013C48.6572 19.7134 51.0798 17.6617 51.0798 14.3813H51.7521V25.5632H51.0798C51.1184 22.2094 48.6185 20.1577 45.7864 20.2698V32.719H48.7692C55.5889 32.719 57.5285 27.3135 57.6019 23.697H58.2743V33.3875H36.6561V32.7152H40.5702V7.97507H36.6561V7.30276H56.7828H56.7867Z" fill="#0C13A1"/>
+                <path d="M72.81 7.30276V7.97507H68.525V32.7267H71.1331C77.918 32.7267 79.8924 26.8383 79.9658 22.9629H80.6381V33.3991H59.3909V32.7267H63.305V7.97507H59.3909V7.30276H72.81Z" fill="#0C13A1"/>
+                <path d="M101.588 15.8767C100.842 12.1133 98.458 7.22947 94.3199 7.22947C88.6169 7.22947 88.0219 14.9842 88.0219 21.0195C88.0219 25.3044 88.5048 33.4687 94.5092 33.4687C97.8282 33.4687 101.777 29.6667 102.708 24.0758H103.381V33.9903H102.708C102.596 33.4301 102.26 32.7616 101.255 32.7616C100.398 32.7616 99.8761 33.1712 98.3499 33.5808C97.5307 33.8396 96.1127 34.141 94.3972 34.141C87.3882 34.141 81.7625 27.8778 81.7625 20.5365C81.7625 13.6396 87.3148 6.55716 94.3972 6.55716C98.3499 6.55716 98.7942 8.0486 100.471 8.0486C100.695 8.0486 101.476 7.86313 101.588 6.85467H102.26V15.8767H101.588Z" fill="#0C13A1"/>
+                <path d="M105.61 20.351C105.61 11.2169 112.692 6.561 117.723 6.561C122.754 6.561 129.836 11.2208 129.836 20.351C129.836 29.4812 122.754 34.141 117.723 34.141C112.692 34.141 105.61 29.4812 105.61 20.351ZM123.577 20.351C123.577 8.94498 120.969 7.22945 117.723 7.22945C114.477 7.22945 111.869 8.94498 111.869 20.351C111.869 31.757 114.477 33.4726 117.723 33.4726C120.969 33.4726 123.577 31.757 123.577 20.351Z" fill="#0C13A1"/>
+                <path d="M141.764 7.30276L147.915 24.4504L152.575 7.30276H162.265V7.97507H158.351V32.7267H162.265V33.399H149.221V32.7267H153.135V8.42327L146.014 34.5157H145.863L136.358 8.42327V32.7267H140.311V33.399H131.702V32.7267H135.616V7.97507H131.702V7.30276H141.768H141.764Z" fill="#0C13A1"/>
+                <path d="M183.513 7.30276V15.5018H182.84C182.69 12.631 181.202 7.97121 175.31 7.97121H172.512V19.6013C175.383 19.7134 177.806 17.6617 177.806 14.3813H178.478V25.5632H177.806C177.844 22.2094 175.344 20.1577 172.512 20.2698V32.719H175.495C182.315 32.719 184.254 27.3135 184.328 23.697H185V33.3875H163.382V32.7152H167.296V7.97507H163.382V7.30276H183.509H183.513Z" fill="#0C13A1"/>
+                <path d="M39.0324 0L30.5899 23.6041L24.0098 7.97494H27.7848L27.7655 7.29877H15.0187V7.97494H18.0209L20.826 14.5744L16.684 26.2083L9.01044 7.97494H12.032L12.0165 7.29877H0V7.97494H3.02151L14.3232 34.7126H14.47L21.282 15.6369L27.8582 31.239L24.0446 41.9032L24.6396 42.1157L39.7047 0H39.0324Z" fill="#0C13A1"/>
+                </svg>
+        </div>
+        <div class="end_name_company_small">
+            © 2023 «Welcome» agency
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+</body>

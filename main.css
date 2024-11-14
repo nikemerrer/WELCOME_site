@@ -1,0 +1,2278 @@
+/* font-family: 'Circe Regular'; */
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('./Circe-Regular.eot');
+    src: url('./Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./Circe-Regular.woff') format('woff'),
+    url('./Circe-Regular.ttf') format('truetype'),
+    url('./Circe-Regular.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+
+.centered{
+    max-width: 1440px;
+    margin: auto;
+    position: absolute;
+    font-family: 'Circe Regular';
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+
+/* TOP */
+
+.tophead {
+    display: grid;
+    grid-template-columns: 36% 28% 36%;
+    position: sticky;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+}
+
+.topleft {
+    display: grid;
+    margin-left: 5%;
+    margin-top: 4%;
+    grid-template-columns: repeat(3, auto);
+}
+
+.two_top_left_words{
+    margin-right: 8%;
+}
+
+.top_left_word{
+    margin-top: 0.5%;
+}
+
+.top_left_word a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.topmid {
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 4%; */
+    font-weight: 700;
+    color: rgba(12, 19, 161, 1);
+    margin-bottom: 5%;
+}
+
+.topright {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    text-align: center;
+    margin-top: 3%;
+    margin-left: auto;
+    width: 100%;
+    height: 50%;
+    /* margin-right: 35%;
+    gap: 35%; */
+}
+
+.top_right_words{
+    margin:auto;
+}
+
+.top_right_words a {
+    text-decoration: none;
+    color: black;
+}
+
+.zayavka{
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    /* height: 40px; */
+    width: 80%;
+    background-color:rgba(12, 19, 161, 1);
+    color: white;
+}
+
+.text_in_zayavka{
+margin: 6% 0% 5% 0%
+}
+
+.burger-menu {
+    position: relative;
+    display: none;
+    cursor: pointer;
+    /* margin-top: 4%; */
+}
+
+.burger-icon {
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 0px;
+    height: 20px;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 3.6%
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+/* Скрываем чекбокс */
+#menu-toggle {
+    display: none;
+}
+
+/* Скрываем меню по умолчанию */
+.burger-dropdown {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    width: 40%;
+    left: 0;
+    top: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.burger-dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.burger-dropdown a:hover {
+    background-color: #bab8b8;
+}
+
+/* Показать меню при нажатии на бургер */
+#menu-toggle:checked + .burger-icon + .burger-dropdown {
+    display: flex;
+}
+
+
+/* Скрыть стандартное меню на малых экранах и показать бургер */
+/* Убираем скрытие центрального элемента */
+@media screen and (max-width: 900px) {
+    .tophead {
+        display: none; /* скрываем только верхнее меню */
+    }
+
+    .burger-menu {
+        display: flex; /* отображаем бургерное меню */
+    }
+
+    /* Оставляем .topmid видимым */
+    .topmid {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.5rem;
+        /* padding: 1%; */
+        margin-top: 1%;
+        margin-bottom: 0%;
+    }
+}
+
+/* .font-size{
+    font-size: 16px;
+} */
+
+/* Dropdown Button */
+.dropbtn {
+    /* font-family: Circe; */
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+.dropbtnrus {
+    /* font-family: Circe; */
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: rgba(245, 245, 245, 1);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /* cursor: pointer; */
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(0, 0, 0) ;
+    padding: 12px 16px;
+    /* text-decoration: none; */
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #bab8b8;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #bab8b8;}
+
+.dropdown:hover .dropbtnrus {background-color: white;}
+
+
+
+/* <--------------------------------------------------> */
+
+
+/* Under the head */
+
+.topunhead{
+    background-color:rgba(245, 245, 245, 1);
+    display: flex;
+    /* width: 1440px; */
+    /* height: 40px; */
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(202, 202, 202, 1);
+}
+
+.lupa{
+    height: 23px;
+    width: 23px;
+    /* margin-top: 9%;
+    margin-right: 10px;
+    /* /* margin-right: 48px; */
+}
+
+.search-container {
+    position: relative;
+}
+
+.toggle-search {
+    margin-top: 30%;
+    display: none; /* Скрываем чекбокс */
+}
+
+.lupa {
+
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.search-input {
+    display: none; /* Скрываем поле ввода по умолчанию */
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: opacity 0.3s ease; /* Плавный переход */
+}
+
+.toggle-search:checked + .lupa + .search-input {
+    display: block; /* Показываем поле ввода, когда чекбокс выбран */
+}
+
+
+.rus_flag{
+    /* margin-right: 8px; */
+    /* margin-top: 9%; */
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    background: url('d3b66be34871cf82ac56400a1deb0529.png');
+    background-size: 24px 24px;
+    border-radius: 50%;
+}
+
+/* .choose_country{
+    margin-top: 3%; 
+} */
+
+/* .strel_choose_country{
+    margin-top: 17px;;
+} */
+
+.topunheaddiv{
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    align-items: center;
+    margin-left: auto;
+}
+/* Скрываем чекбокс */
+.toggle-search {
+    display: none;
+}
+
+/* Контейнер для поля поиска */
+.search-bar {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 0;  /* По умолчанию ширина 0 */
+    opacity: 0;
+    transition: width 0.5s ease, opacity 0.5s ease;  /* Плавная анимация */
+    margin-left: 10px;
+}
+
+/* Отображаем поле для поиска при активированном чекбоксе */
+.toggle-search:checked + label + .search-bar {
+    width: 250px;  /* Ширина поля после активации */
+    opacity: 1;    /* Видимость поля */
+}
+
+@media screen and (max-width: 425px) {
+    .toggle-search:checked + label + .search-bar{
+        width: 220px;
+    }
+}
+
+/* Стили для поля ввода */
+.search-bar input {
+    padding: 5px;
+    width: 100%;  /* Растягиваем на всю доступную ширину */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(12, 19, 161, 1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px){
+
+}
+
+.search-bar button:hover {
+    background-color: rgba(12, 19, 161, 1);
+}
+
+
+
+/* <--------------------------------------------------> */
+
+
+/*Picture with cremle */
+
+.slider-num1{
+    /* margin-top: 5%; */
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+}
+
+.slide img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slide-info {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid blue;
+    color: black;
+    max-width: 300px;
+    text-align: left;
+}
+
+.number {
+    font-size: 36px;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.description p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.svasi{
+    margin-left: auto;
+    margin-right: 5%;
+    width: 30%;
+    text-align: end;
+}
+
+.pagination {
+    backdrop-filter: blur(8px);
+    padding: 2.1%;
+    margin-top: -6%;
+    display: flex;
+}
+
+.pagination span {
+    cursor: pointer;
+    font-size: 18px;
+    /* opacity: 0.7; */
+    color: rgba(255, 255, 255, 0.4);
+    margin:1%
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+    /* margin: 0 10%; */
+    /* text-align: right; */
+    /* margin: 0 auto; */
+    
+}
+
+.pagination span.active {
+    opacity: 1;
+    font-weight: bold;
+    color: white;
+}
+
+
+.block_with_photo_creamle{
+    width: 100%;
+    background: url('./кремль.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_sity{
+    width: 100%;
+    background: url('./сити.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_shariki{
+    width: 100%;
+    background: url('./шарики.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_reka{
+    width: 100%;
+    background: url('./река.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_cerkov{
+    width: 100%;
+    background: url('./церковь.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_whitekupola{
+    width: 100%;
+    background: url('./белые_купола.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_siyay{
+    width: 100%;
+    background: url('./полярное_сияние.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_traktori{
+    width: 100%;
+    background: url('./тракторы.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_more{
+    width: 100%;
+    background: url('./море.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_with_photo_ostrov{
+    width: 100%;
+    background: url('./островок.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .block_with_photo_cerkov,
+.block_with_photo_creamle,
+.block_with_photo_more,
+.block_with_photo_ostrov,
+.block_with_photo_shariki,
+.block_with_photo_sity,
+.block_with_photo_siyay,
+.block_with_photo_traktori,
+.block_with_photo_traktori,
+.block_with_photo_whitekupola{
+
+} */
+
+
+
+
+
+.piccream{
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    /* width: 1440px; */
+    /* height: 488px; */
+    color: white
+}
+
+
+/* <--------------------------------------------------> */
+
+
+/* In pic left text */
+.in_pic_left{
+    display: grid;
+    /* width: 642px; */
+    width: 60%;
+    /* font-family: Circe; */
+}
+
+/* In pic left top words */
+.in_pic_ltwords{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-top:10%;
+    margin-left: 10%;
+    width: 50%;
+}
+
+/* In pic left bottom words */
+.in_pic_lbwords{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 52px;
+    margin-top: auto;
+    margin-left: 10%;
+    /* margin-bottom: 10%;  */
+    margin-top: 0%;
+}
+
+/* <--------------------------------------------------> */
+
+
+/* In pic right grid */
+.in_pic_right{
+    display: grid;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+/* White block in picture */
+.block_in_pic{
+    margin: 20% 0% 40% 30%;
+    width: 305px;
+    height: 328px;
+    background-color: white;
+    border-bottom: 4px solid rgba(12, 19, 161, 1);
+    display: grid;
+}
+
+
+/* Top text */
+.top_text_inblock{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 5rem;
+    line-height: 84px;
+    font-weight: 350;
+    /* font-family: Circe; */
+    color: rgba(12, 19, 161, 1);
+}
+
+/* Bottom text */
+.bottom_text_inblock{
+    width: 80%;
+    color: black;
+    margin-top:auto;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    /* font-family: Circe; */
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .svasi{
+        display: grid;
+        grid-template-columns: repeat(10, auto);
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .block_in_pic{
+        width: 270px;
+        height: 300px;
+    }
+
+    .pagination{
+        margin-top:-7%
+    }
+
+}
+
+
+@media  screen and (max-width:850px){
+
+    .block_in_pic{
+        width: 240px;
+        height: 280px;
+    }
+
+    .top_text_inblock{
+        font-size: 4.5rem;
+    }
+
+    .in_pic_lbwords{
+        font-size: 2.5rem;
+    }
+
+    .bottom_text_inblock{
+        font-size: 1.3rem;
+    }
+
+    .pagination{
+        margin-top:-7.5%
+    }
+
+}
+
+@media  screen and (max-width:750px){
+
+    .block_in_pic{
+        width: 200px;
+        height: 240px;
+    }
+    
+    .in_pic_lbwords{
+        line-height: 30px;
+        font-size: 2rem;
+    }
+
+    .in_pic_ltwords{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .top_text_inblock{
+        font-size: 4rem;
+    }
+
+    .bottom_text_inblock{
+        font-size: 1.1rem;
+    }
+
+    .pagination{
+        margin-top:-8%
+    }
+
+}
+
+@media  screen and (max-width:650px){
+
+    .block_in_pic{
+        width: 170px;
+        height: 200px;
+    }
+
+    .top_text_inblock{
+        margin-top: 2%;
+        font-size: 3rem;
+    }
+
+    .bottom_text_inblock{
+        font-size: 1rem;
+    }
+
+    .in_pic_lbwords{
+
+        font-size: 1.5rem;
+    }
+
+    .in_pic_ltwords{
+        font-size: 0.7rem;
+    }
+
+    .pagination{
+        margin-top:-7.6%;
+        padding:10px;
+    }
+
+}
+
+@media  screen and (max-width:550px){
+    
+    .block_in_pic{
+        width: 130px;
+        height: 170px;
+    }
+
+    .top_text_inblock{
+        margin-top: -5%;
+        font-size: 2rem;
+    }
+
+    .bottom_text_inblock{
+        margin-top: -10%;
+        font-size: 0.8rem;
+    }
+
+    .in_pic_lbwords{
+        font-size: 1.3rem;
+    }
+    
+    .pagination{
+        margin-top:-8.5%;
+        padding: 8px;
+    }
+
+}
+
+@media  screen and (max-width:410px){
+    .block_in_pic{
+        width: 100px;
+        height: 140px;
+    }
+
+    .top_text_inblock{
+        font-size: 1.8rem;
+    }
+
+    .bottom_text_inblock{
+        font-size: 0.6rem;
+    }
+
+        
+    .in_pic_lbwords{
+        line-height: 20px;
+        font-size: 1rem;
+    }
+
+    .in_pic_ltwords{
+
+        font-size: 0.7rem;
+    }
+
+    .pagination{
+        padding: 7px;
+    }
+
+    .pagination span{
+        font-size: 0.8rem;
+    }
+
+}
+
+/* <--------------------------------------------------> */
+
+/* Links under the list */
+
+.links_unlist{
+    display: flex;
+    padding: 2% 0% 2% 6%
+}
+@media screen and (max-width: 1024px) {
+    .links_unlist{
+        display: none;
+    }
+}
+
+.text_unlist{
+    width: 16%;
+    margin-right: 1%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text_unlist a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*<-------------------------------------------------->*/
+
+/* Under text list*/
+.under_list{
+    background-color: rgba(12, 19, 161, 1);
+    color: white;
+    display: flex;
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+
+}
+.text_in_unlinks{
+    line-height: 36px;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+@media screen and (max-width: 425px){
+    .text_in_unlinks{
+        font-size: 1rem;
+        /* justify-content: center;
+        align-items: center; */
+        /* margin-left: 20%; */
+    }
+}
+
+
+/*<-------------------------------------------------->*/
+
+/* About us */
+.about_us{
+    margin-top: 10%;
+    margin-left:5%;
+    /* height: 212px; */
+    width: auto;
+    /* display:flex; */
+}
+.left_about_us{
+    /* float: left; */
+    font-size:32px;
+    font-weight: 700;
+    line-height: 36px;
+    /* display: grid; */
+    float: left;
+}
+
+.left_about_us a{
+    text-decoration: none;
+    color:rgba(12, 19, 161, 1);
+
+}
+
+.right_about_us{
+    display:grid;
+    gap:15%;
+    margin-left: auto;
+    margin-right: 5.5%;
+    width: 62%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 32px;
+
+    max-height: 100%;
+    /* overflow-y: auto; */
+}
+
+@media screen and (max-width: 768px){
+    .about_us{
+        display:grid;
+    }
+    .left_about_us{
+    margin: 0 auto 0 auto;
+    font-size:32px;
+    font-weight: 700;
+    line-height: 36px;
+    color:rgba(12, 19, 161, 1);
+    /* display: grid; */
+    float: left;
+    }
+    .right_about_us{
+        display:grid;
+        gap:10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 32px;
+        max-height: 100%;
+        /* overflow-y: auto; */
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .left_about_us{
+        font-size:1.4rem;
+        line-height: 30px;
+    }
+
+    .right_about_us{
+        display:grid;
+        gap:5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 32px;
+        max-height: 100%;
+        /* overflow-y: auto; */
+    }
+}
+
+
+/*<-------------------------------------------------->*/
+
+/* VIDEO */
+/* .video_pic{
+    width: 100%;
+    height: 50%;
+    background-image: url('видио.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:10%;
+    margin-left: 5%;
+} */
+
+.video_pic {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Занимает всю доступную ширину */
+    overflow: hidden; /* Скрывает часть изображения, выходящую за пределы контейнера */
+}
+
+.responsive-image {
+    width: 100%; /* Ширина изображения адаптируется к ширине контейнера */
+    height: auto; /* Высота пропорциональна ширине */
+    max-width: 1280px; /* Максимальная ширина изображения */
+    max-height: 500px; /* Максимальная высота изображения */
+}
+
+
+/* @media screen and (max-width: 1024px){
+    .video_pic{
+        height: 35%;
+    }
+}
+@media screen and (max-width: 900px){
+    .video_pic{
+        height: 30%;
+    }
+} */
+
+
+/*<-------------------------------------------------->*/
+
+/* SERVISES */
+
+.servises{
+    width: inherit;
+    margin-left:5%;
+    margin-top: 10%;
+    /* margin-bottom: 5%; */
+}
+.grid_servises{
+    float: left;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.grid_servises a{
+    text-decoration: none;
+    color: rgba(12, 19, 161, 1);
+
+}
+
+.alot_servises{
+    /* height: auto; */
+    /* width: 413.5px; */
+    margin-left:30%;
+    display:grid;
+    grid-template-columns: 48% 48%;
+    row-gap: 2%;
+    column-gap: 4%;
+}
+.blocks{
+    display:inline-grid;
+    border-top: 1px solid;
+    border-color: rgba(202, 202, 202, 1);
+
+}
+.blue_block_up{
+    width: 20%;
+    /* height: 32px; */
+    border-top: 4px solid rgba(12, 19, 161, 1);
+}
+
+.name_block{
+    /* width: 413.5px; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 32px;
+}
+.text_in_block{
+    margin-top: 5%;
+    font-size:1.25rem;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgba(135, 135, 135, 1);
+}
+.more_information{
+    display: flex;
+    margin-top: 5%;
+    color: rgba(12, 19, 161, 1);
+}
+
+.more_information a{
+    text-decoration: none;
+    color: rgba(12, 19, 161, 1);
+}
+
+.dlin_strelochka_svg{
+    margin-top: 1.5%;
+}
+
+@media screen and (max-width: 768px){
+    .servises{
+        display: grid;
+        width: 90%;
+    }
+    .grid_servises{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .alot_servises{
+        height: auto;
+        margin-top:5%;
+        margin-left:5%;
+        display:grid;
+        grid-template-columns: 48% 48%;
+
+        column-gap: 4%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .alot_servises{
+        height: auto;
+        display:grid;
+        grid-template-columns: 88%;
+        gap: 0%;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .grid_servises{
+        font-size: 1.7rem;
+    }
+    .name_block{
+        font-size: 1.1rem;
+    }
+
+    .text_in_block{
+        font-size: 1rem;
+    }
+    
+    .blocks{
+        margin-top: 10%;
+    }
+}
+
+
+/*<-------------------------------------------------->*/
+
+/*INTERAKTIVNAYA KARTA*/
+/* .interektiv_map{
+    width: 100%;
+    height: 70%;
+    background-image: url('интеректив мап.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 12%;
+    /* margin-left: 2.5%; */
+
+
+.interektiv_map {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Занимает всю доступную ширину */
+    overflow: hidden; /* Скрывает часть изображения, выходящую за пределы контейнера */
+}
+
+.responsive-image {
+    width: 100%; /* Ширина изображения адаптируется к ширине контейнера */
+    height: auto; /* Высота пропорциональна ширине */
+    max-width: 1280px; /* Максимальная ширина изображения */
+    max-height: 712px; /* Максимальная высота изображения */
+}
+
+
+
+
+/*<-------------------------------------------------->*/
+
+/* CHOOSE RUSSIAN */
+.choose_russian{
+    /* width: 345px; */
+    /* height: 72px; */
+    margin-top: 10%;
+    margin-left: 5%;
+    color: rgba(12, 19, 161, 1);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 36px;
+    width: 25%;
+}
+
+@media screen and (max-width: 900px){
+    .choose_russian{
+        width: auto;
+
+    }
+}
+
+@media screen and (max-width: 425px){
+    .choose_russian{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 0%;
+    }
+}
+
+/* Variants */
+.variant_choose{
+    /* width: 1280px; */
+    /* height: 604px; */
+    /* display: flex; */
+    margin-top: 5%;
+    margin-left:5%;
+}
+
+.variants{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: AUTO;
+    row-gap: 8%;
+    column-gap: 1%;
+}
+
+@media screen and (max-width: 900px){
+    .variants{
+        grid-template-columns: repeat(3, auto);
+        row-gap: 5%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .variants{
+        grid-template-columns: repeat(2, auto);
+        row-gap: 5%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .variants{
+        grid-template-columns: auto;
+        row-gap: 2%;
+        margin-left: 5%;
+    }
+    .text_in_variant{
+        font-size: 1rem !important;
+        text-align: center;
+    }
+}
+
+
+.text_in_variant{
+    border-top: 4px solid rgba(12, 19, 161, 1);
+    /* height: 80%; */
+    width: 80%;
+    /* height: 155px; */
+    background-color: rgba(245, 245, 245, 1);
+    font-size: 1.25rem;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 5%;
+    /* padding-top: 5%; */
+    /* padding-left: 5%; */
+    /* padding-bottom: 5%; */
+}
+
+.choose_russian_01{
+    width: 30%;
+    /* height: 59px; */
+    margin-top: 15%;
+    margin-left: 5%;
+    color: rgba(12, 19, 161, 1);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 900px){
+    .choose_russian_01{
+        width: auto;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .choose_russian_01{
+
+        margin-top: 80%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .choose_russian_01{
+        margin-top: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 0%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .choose_russian_01{
+
+        margin-top: 110%;
+    }
+}
+
+.why_go_away{
+    margin-left: 5%;
+    margin-top: 5%;
+    /* display:grid; */
+}
+
+.variants_02{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: AUTO;
+    row-gap: 15%;
+    column-gap: 1%;
+}
+
+@media screen and (max-width: 900px){
+    .variants_02{
+        grid-template-columns: repeat(3, auto);
+        row-gap: 5%;
+
+    }
+}
+
+@media screen and (max-width: 650px){
+    .variants_02{
+        grid-template-columns: repeat(2, auto);
+        row-gap: 5%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .variants_02{
+        grid-template-columns: auto;
+        row-gap: 2%;
+        margin-left: 5%;
+    }
+}
+
+.choose_russian_02{
+    /* width: 1130px; */
+    /* height: 36px; */
+    margin-top: 10%;
+    margin-left: 5%;
+    color: rgba(12, 19, 161, 1);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 900px){
+    .choose_russian_02{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .choose_russian_02{
+
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .choose_russian_02{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .choose_russian_02{
+
+        margin-top: 80%;
+    }
+}
+
+
+    .popular_people{
+        display: flex;
+        margin-left: 5%;
+        margin-top: 3%;
+        /* width: 1388px; */
+        /* height: 433px; */
+    }
+
+    .information{
+        display: block;
+        width: 33%;
+        margin-right: 4%;
+        /* height: 302px; */
+    }
+
+
+
+    .big_text_top{
+        font-size:1rem;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .big_text_bot{
+        margin-top: 5%;
+        font-size:1rem;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .persanal_data{
+        margin-top: 10%;
+        /* width: 402px;  */
+        /* height: 50px; */
+    }
+
+    .person_name{
+        /* width: 400px; */
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .person_prof{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .person_links{
+        display: flex;
+        margin-top: 13%;
+    }
+
+    .link_for_personal{
+        display: flex;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgba(135, 135, 135, 1);
+        margin-top: 5%;
+    }
+
+    .link_for_personal a{
+        text-decoration: none;
+        color: rgba(135, 135, 135, 1)
+    }
+
+    .hrefkvadrat_for_personal{
+        margin-left: 5%;
+        margin-top:-1%;
+    }
+
+    .strelochki{
+        margin-left: auto;
+    }
+
+    .dgeff_monson{
+        width: 100%;
+        height: 100%;
+        background-image:url('10e4f2ff11a357f19e078795f6fd4827.png');
+        background-size:cover;
+        background-position: 66% 50%;
+        filter: grayscale(1) brightness(1.3);
+
+
+ 
+    }
+
+    .background-color_dgeff_monson{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.2); */
+
+    }
+
+    @media screen and (max-width: 956px){
+        .dgeff_monson{
+            width: 300%;
+        }
+        .teodor_kyrentzin{
+            display: none;
+        }
+        .pol_cerrol{
+            display:none
+        }
+        .information{
+            width:70%;
+        }
+
+    }
+    /* @media screen and (max-width: 600px){
+        .dgeff_monson{
+            margin-left: -250%;
+        }
+
+        .information{
+            position: sticky;
+            color:white;
+        }
+    } */
+
+    
+ 
+    
+    .teodor_kyrentzin{
+        background:url('66f059cf9dd40fe8a37d13f80ca2e894.png');
+        background-size:cover;
+        background-position: 66% 50%;
+        filter: grayscale(1);    }
+
+    .background-color_teodor_kyrentzin{
+        width: 100%;
+        height: 100%;
+
+        /* background-color: rgba(0, 0, 0, 0.4); */
+
+    }
+
+    .pol_cerrol{
+        background: url('e529f38dc0e498288255286d9abb3b73.png');
+        background-size:cover;
+        background-position: 20% 50%;
+        filter: grayscale(1);    }
+
+    .background-color_pol_cerrol{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.4); */
+
+    }
+
+    .popular_pip_photos{
+        width: -webkit-fill-available;
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+        gap:1%;
+    }
+
+    .text_in_photo_popular_pip{
+        display: block;
+    }
+
+    .text_in_photo_name{
+        margin-right: 15%;
+        color: white;
+        /* width: 250px; */
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .text_in_photo_prof{
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .background-color_dgeff_monson, 
+    .background-color_teodor_kyrentzin, 
+    .background-color_pol_cerrol {
+        width: 100%;
+        height: 100%;
+        position: relative; /* Для возможности абсолютного позиционирования */
+        background-color: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон для каждого блока */
+        /* background-blend-mode: darken; Это поможет затемнить изображение */
+    }
+    
+    .text_in_photo_popular_pip {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px; /* Отступы для текста */
+        color: white; /* Белый цвет текста */
+        font-weight: bold;
+        /* background-color: rgba(0, 0, 0, 0.5); Темный полупрозрачный фон за текстом */
+        /* text-align: center; Центрирование текста */
+    }
+    
+    .text_in_photo_name {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    
+    .text_in_photo_prof {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .poppip_withtext{
+        display:none
+    }
+
+    /* .news_strel_right{
+
+    }
+
+
+    .news_strel_left{
+
+    } */
+    @media screen and (max-width: 600px){
+        .poppip_withtext{
+            display:block;
+            margin-top: 5%;
+        }
+        .poppip_photo{
+            width: 100%;
+            height: 100%;
+            background-image:url('10e4f2ff11a357f19e078795f6fd4827.png');
+            background-size:cover;
+            background-position: 66% 50%;
+            filter: grayscale(1) brightness(0.9);
+        }
+        
+           .information{
+            display: block;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            color: white;
+            /* height: 302px; */
+        }
+
+        .big_text{
+            margin-top: 10%;
+        }
+        
+        .big_text_top{
+            font-size:1rem;
+            font-weight: 400;
+            line-height: 24px;
+            
+        }
+        
+        .big_text_bot{
+            margin-top: 5%;
+            font-size:1rem;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        
+        .persanal_data{
+            margin-top: 10%;
+            /* width: 402px;  */
+            /* height: 50px; */
+        }
+        
+        .person_name{
+            /* width: 400px; */
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        
+        .person_prof{
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        
+        .person_links{
+            display: flex;
+            margin-top: 13%;
+        }
+        
+        .link_for_personal{
+            display: flex;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(255, 255, 255);
+        }
+        
+        .link_for_personal a {
+            margin-left: 0.1%;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        
+        .link_for_personal a:hover{
+            color: rgba(255, 255, 255, 1)
+        }
+        
+        .hrefkvadrat_for_personal{
+            margin-left: 5%;
+        }
+        
+        .strelochki{
+            margin-left: auto;
+        }
+        
+        .background-color_dgeff_monson {
+            width: 100%;
+            height: 100%;
+            position: relative; /* Для возможности абсолютного позиционирования */
+            /* background-color: rgba(0, 0, 0, 0.3); Полупрозрачный фон для каждого блока */
+            /* background-blend-mode: darken; Это поможет затемнить изображение */
+        }
+
+        .popular_people{
+            display: none;
+        }
+    }
+
+
+
+/* .now_news{
+
+} */
+
+@media screen and (max-width: 768px){
+    .now_news{
+        width: 100%;
+        height: 100%;
+    }
+    .photo_news{
+        height: 100%;
+    }
+
+    .news_with_photo{
+
+    display:block;
+    border-bottom:0px !important;
+    }
+
+
+}
+
+
+
+.news{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5%;
+    /* width: 1281px; */
+    /* height: 36px; */
+}
+
+.text_news{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.text_news a{
+    text-decoration: none;
+    color: rgba(12, 19, 161, 1);
+
+}
+
+@media screen and (max-width: 425px){
+    .text_news{
+        font-size: 1.5rem;
+    }
+    .link_on_all_news{
+        margin-top: 3%;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 975px){
+    .link_on_all_news{
+        width: 25% !important;
+    }
+}
+
+@media screen and (max-width:600px){
+    .link_on_all_news{
+        width: 30% !important;
+    }
+}
+
+@media screen and (max-width:490px){
+    .link_on_all_news{
+        width: 35% !important;
+    }
+}
+
+.link_on_all_news{
+    width: 15%;
+    /* margin-right: 5%; */
+    display: flex;
+    /* margin-top: 12px; */
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 700;
+    color:  rgba(12, 19, 161, 1);
+}
+
+.strel_right_news{
+    margin-top: 2.5%;
+    margin-left:3%
+}
+
+@media screen and (max-width:425px){
+    .strel_right_news{
+        margin-top: 3%; 
+    }
+}
+
+@media screen and (max-width:350px){
+    .link_on_all_news{
+        width: 40% !important;
+    }
+}
+
+.link_on_all_news a {
+    /* margin-left: 0.1%; */
+    text-decoration: none;
+    color: rgba(12, 19, 161, 1);
+}
+
+.link_for_personal a {
+    color: rgba(135, 135, 135, 1);
+}
+
+
+/* NEWS */
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    font-family: 'Circe Regular', sans-serif;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.news_content {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* column-gap: 5%; */
+    height: 500px;
+    margin-top: 3%;
+}
+
+.block_with_photo_news {
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.news_picture {
+    width: 100%;
+    height: 100%; /* Изображение адаптивное */
+    background: url('32bbe79bded7850bf746ae83847d58c7.png'); /* Путь к твоему изображению */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.white_block_in_photo_news {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.text_in_news_content {
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+.paragraph_in_news_content {
+    font-size: 1.6rem;
+    line-height: 36px;
+    font-weight: 700;
+    margin-top: 4%;
+    align-content: center;
+}
+
+@media screen and (max-width: 880px) {
+    .paragraph_in_news_content{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 424px) {
+    .paragraph_in_news_content{
+        font-size: 1.3rem;
+    }
+}
+
+
+.link_news {
+    margin-top: 2%;
+    border-bottom: 1px solid gray;
+    align-content: center;
+}
+
+.link_news a{
+    text-decoration: none;
+    color: rgba(135, 135, 135, 1)
+}
+
+.hrefkvadrat{
+    margin-left: 1%;
+}
+
+.grid_in_news_content {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    margin-left: 5%;
+}
+
+.row_news_grid {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.data_news {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.zagalovok_row_news {
+    font-size: 1.5rem;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 980px) {
+    .zagalovok_row_news{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .zagalovok_row_news{
+        font-size: 1.2rem;
+    }
+}
+
+.link_news_rows {
+    display: flex;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(135, 135, 135, 1);
+}
+
+.link_news_rows a{
+    text-decoration: none;
+    color: rgba(135, 135, 135, 1)
+}
+
+.hrefkvadrat_news_rows{
+    margin-left: 2%;
+}
+
+/* Адаптивная вёрстка */
+@media screen and (max-width: 768px)  {
+    .news_content {
+        grid-template-columns: 1fr; /* Показываем только одну колонку */
+    }
+
+    .grid_in_news_content {
+        display: none; /* Скрываем правую часть */
+    }
+
+    .news_picture {
+        width: 100%;
+        height: auto; /* Корректное отображение изображения */
+    }
+}
+
+
+
+
+
+/* EENNDD */
+
+.end{
+    display: flex;
+    /* height: 380px; */
+    /* width: 1440px; */
+    margin-top: 10%;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.end_with_logo{
+    display: block;
+    /* height: 316px; */
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.end_logo{
+    font-size: 1.6875rem;
+    color: rgba(12, 19, 161, 1);
+}
+
+.end_name_company{
+    margin-top: 150%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(135, 135, 135, 1);
+}
+
+.agen_yslyg_contact_for_big_dev{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10%;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.agen_yslyg_contact_for_big_dev a{
+    text-decoration: none;
+    color:rgba(135, 135, 135, 1);
+}
+
+.agen_yslyg_contact a{
+    text-decoration: none;
+    color:rgba(135, 135, 135, 1);
+}
+
+.end_agenstvo{
+    display: block;
+    /* width: 272px; */
+}
+
+.zagolovok_end{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.text_in_end{
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(135, 135, 135, 1);
+    margin-bottom: 8%;
+}
+
+.end_tg_wp{
+    margin-top: 5%;
+}
+
+.end_for_small_devise{
+    display: none;
+    /* height: 380px; */
+    /* width: 1440px; */
+    margin-top: 10%;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.end_with_logo{
+    display: grid;
+    /* height: 316px; */
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.end_logo{
+    font-size: 1.6875rem;
+    color: rgba(12, 19, 161, 1);
+}
+
+.end_name_company{
+    margin-top: 150%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(135, 135, 135, 1);
+}
+
+.agen_yslyg_contact{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+ 
+.end_agenstvo{
+    display: block;
+    /* width: 272px; */
+}
+
+.zagolovok_end{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.text_in_end{
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(135, 135, 135, 1);
+}
+
+.end_tg_wp{
+    margin-top: 5%;
+    display: flex;
+}
+
+.tg{
+    margin-right: 5%;
+}
+
+.end_tri{
+    display:none;
+}
+
+.end_tri a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+}
+
+
+.end_for_small{
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.end_logo_small{
+    width: 100%;
+    font-size: 1.6875rem;
+    color: rgba(12, 19, 161, 1);
+}
+
+.end_name_company_small{
+    /* margin-top: 150%; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(135, 135, 135, 1);
+}
+
+@media (max-width:1040px){
+    .end_for_small_devise{
+        display:block
+    }
+    .end{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:500px){
+    .end_tri{
+        margin-top: 3%;
+        padding-top: 5%;
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        text-align: center;
+    }
+    .agen_yslyg_contact{
+        display: none;
+    }
+    .end_for_small{
+        display: block;
+        margin-top:5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+div{
+    display: inline-block;
+    background-size: contain;         
+
+}
+/* Dropdown Button */
+.dropbtn {
+    /* font-family: Circe; */
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+.dropbtnrus {
+    /* font-family: Circe; */
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: rgba(245, 245, 245, 1);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    border-radius: 7px;
+    display: none;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 100; */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(0, 0, 0) ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #bab8b8;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #bab8b8;}
+
+.dropdown:hover .dropbtnrus {background-color: white;}
+html{
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    display:block;
+}

@@ -1,0 +1,1680 @@
+
+/* font-family: 'Circe Regular'; */
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('./Circe-Regular.eot');
+    src: url('./Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./Circe-Regular.woff') format('woff'),
+    url('./Circe-Regular.ttf') format('truetype'),
+    url('./Circe-Regular.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+
+.centered{
+    max-width: 1440px;
+    margin: auto;
+    position: absolute;
+    font-family: 'Circe Regular';
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+
+/* TOP */
+
+.centered {
+    max-width: 1440px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+.tophead {
+    display: grid;
+    grid-template-columns: 36% 28% 36%;
+    position: sticky;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+}
+
+.topleft {
+    display: grid;
+    margin-left: 5%;
+    margin-top: 4%;
+    grid-template-columns: repeat(3, auto);
+}
+
+.two_top_left_words{
+    margin-right: 8%;
+}
+
+.top_left_word{
+    margin-top: 0.5%;
+    cursor: pointer;
+}
+
+.top_left_word a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.topmid {
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 4%; */
+    font-weight: 700;
+    color: rgba(12, 19, 161, 1);
+    margin-bottom: 5%;
+}
+
+.topright {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    text-align: center;
+    margin-top: 3%;
+    margin-left: auto;
+    width: 100%;
+    height: 50%;
+    /* margin-right: 35%;
+    gap: 35%; */
+}
+
+.top_right_words{
+    margin:auto;
+}
+
+
+.top_right_words a {
+    text-decoration: none;
+    color: black;
+}
+
+.zayavka{
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    /* height: 40px; */
+    width: 80%;
+    background-color:rgba(12, 19, 161, 1);
+    color: white;
+}
+
+.text_in_zayavka{
+margin: 6% 0% 5% 0%
+}
+
+.burger-menu {
+    position: relative;
+    display: none;
+    cursor: pointer;
+    /* margin-top: 4%; */
+}
+
+.burger-icon {
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 0px;
+    height: 20px;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 3.6%
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+/* Скрываем чекбокс */
+#menu-toggle {
+    display: none;
+}
+
+/* Скрываем меню по умолчанию */
+.burger-dropdown {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    width: 40%;
+    left: 0;
+    top: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.burger-dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.burger-dropdown a:hover {
+    background-color: #bab8b8;
+}
+
+/* Показать меню при нажатии на бургер */
+#menu-toggle:checked + .burger-icon + .burger-dropdown {
+    display: flex;
+}
+
+
+/* Скрыть стандартное меню на малых экранах и показать бургер */
+/* Убираем скрытие центрального элемента */
+@media screen and (max-width: 900px) {
+    .tophead {
+        display: none; /* скрываем только верхнее меню */
+    }
+
+    .burger-menu {
+        display: flex; /* отображаем бургерное меню */
+    }
+
+    /* Оставляем .topmid видимым */
+    .topmid {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.5rem;
+        /* padding: 1%; */
+        margin-top: 1%;
+        margin-bottom: 0%;
+    }
+}
+
+/* .font-size{
+    font-size: 16px;
+} */
+
+/* Dropdown Button */
+.dropbtn {
+    /* font-family: Circe; */
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+.dropbtnrus {
+    /* font-family: Circe; */
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: rgba(245, 245, 245, 1);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /* cursor: pointer; */
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(0, 0, 0) ;
+    padding: 12px 16px;
+    /* text-decoration: none; */
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #bab8b8;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #bab8b8;}
+
+.dropdown:hover .dropbtnrus {background-color: white;}
+
+
+
+/* <--------------------------------------------------> */
+
+
+/* Under the head */
+
+.topunhead{
+    background-color:rgba(245, 245, 245, 1);
+    display: flex;
+    /* width: 1440px; */
+    /* height: 40px; */
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(202, 202, 202, 1);
+}
+
+.lupa{
+    height: 23px;
+    width: 23px;
+    /* margin-top: 9%;
+    margin-right: 10px;
+    /* /* margin-right: 48px; */
+}
+
+.search-container {
+    position: relative;
+}
+
+.toggle-search {
+    margin-top: 30%;
+    display: none; /* Скрываем чекбокс */
+}
+
+.lupa {
+
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.search-input {
+    display: none; /* Скрываем поле ввода по умолчанию */
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: opacity 0.3s ease; /* Плавный переход */
+}
+
+.toggle-search:checked + .lupa + .search-input {
+    display: block; /* Показываем поле ввода, когда чекбокс выбран */
+}
+
+
+.rus_flag{
+    /* margin-right: 8px; */
+    /* margin-top: 9%; */
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    background: url('d3b66be34871cf82ac56400a1deb0529.png');
+    background-size: 24px 24px;
+    border-radius: 50%;
+}
+
+/* .choose_country{
+    margin-top: 3%; 
+} */
+
+/* .strel_choose_country{
+    margin-top: 17px;;
+} */
+
+.topunheaddiv{
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    align-items: center;
+    margin-left: auto;
+}
+/* Скрываем чекбокс */
+.toggle-search {
+    display: none;
+}
+
+/* Контейнер для поля поиска */
+.search-bar {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 0;  /* По умолчанию ширина 0 */
+    opacity: 0;
+    transition: width 0.5s ease, opacity 0.5s ease;  /* Плавная анимация */
+    margin-left: 10px;
+}
+
+/* Отображаем поле для поиска при активированном чекбоксе */
+.toggle-search:checked + label + .search-bar {
+    width: 250px;  /* Ширина поля после активации */
+    opacity: 1;    /* Видимость поля */
+}
+
+@media screen and (max-width: 425px) {
+    .toggle-search:checked + label + .search-bar{
+        width: 220px;
+    }
+}
+
+/* Стили для поля ввода */
+.search-bar input {
+    padding: 5px;
+    width: 100%;  /* Растягиваем на всю доступную ширину */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(12, 19, 161, 1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px){
+
+}
+
+.search-bar button:hover {
+    background-color: rgba(12, 19, 161, 1);
+}
+
+
+
+
+
+
+/* map */
+
+.road{
+    margin-top: 3%;
+    margin-left: 3%;
+    display: flex;
+    font-size: 1rem;
+}
+
+.road a{
+    text-decoration: none;
+
+    color: rgba(135, 135, 135, 1)
+}
+
+.strinroad{
+    margin-top: 0.3%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+@media screen and (max-width:600px) {
+    .strinroad{
+        margin-top: 0.6%;
+    }
+}
+
+.podati_zayavka{
+    margin-top: 5%;
+    width: 100%;
+    /* margin-left: 3%;
+    margin-right: 3%; */
+}
+
+
+/* ZAYAVKA */
+
+.grid_zayavka{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 1200px){
+    .grid_zayavka{
+        margin-left: 10%;
+        /* margin-right: 5%; */
+        grid-template-columns: auto;
+    }
+}
+ 
+.tag{
+    color: rgba(12, 19, 161, 1);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+@media screen and (max-width:500px){
+    .tag{
+        margin-top: 3%;
+    }
+}
+
+.forma_zayavki{
+    margin-top: 5%;
+    width: 93%;
+}
+
+.tag_in_forma{
+    margin-bottom: 5%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 1);
+    margin-top:5%;
+}
+
+
+
+
+
+/* BLOCK 1 */
+
+
+.block1{
+    display: grid;
+}
+
+
+.personal_dan{
+    display: grid;
+}
+
+.zapolnite_personal_dan{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.name{
+    display: grid;
+}
+
+.surename{
+    display: grid;
+}
+
+.grazdanstvo{
+    display: grid;
+}
+
+/* DATA */
+
+.data_rozdenia{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 3%;
+}
+
+.day{
+    display: grid;
+}
+
+.month{
+    display: grid;
+}
+
+.year{
+    display: grid;
+}
+
+/* ----- */
+
+.spawn{
+    display: grid;
+}
+
+.obychenie{
+    display: grid;
+}
+
+.about_u{
+    display: grid;
+    margin-top:3%
+}
+
+#insert_about_u {
+    width: 80%; /* Ширина поля */
+    height: auto; /* Высота будет зависеть от количества строк */
+    padding: 10px; /* Отступ внутри поля */
+    font-size: 1rem; /* Размер текста */
+
+
+    border:1px solid rgba(182, 184, 191, 1);
+
+    resize:none; /* Разрешить изменение высоты */
+}
+
+#first_name,
+#second_name,
+#select_grazdanstvo,
+#insert_spawn,
+#insert_obychenie,
+#insert_about_u,
+#select_day,
+#select_month,
+#select_year{
+
+    font-size: 1rem;
+    padding: 13px;
+    /* margin-top: 5%; */
+    margin-bottom: 5%;
+    border:1px solid rgba(182, 184, 191, 1);
+
+}
+
+.choose_d_roz{
+    display: grid;
+    align-items: center;
+}
+
+@media screen and (max-width:815px){
+    .zapolnite_personal_dan{
+        grid-template-columns: 80%;
+        column-gap: 0%;
+    }
+
+
+    .about_u{
+        width: 95%;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .zapolnite_personal_dan{
+        grid-template-columns: 70%;
+        /* column-gap: 0%; */
+    }
+
+
+
+    .about_u{
+        width: 82%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .zapolnite_personal_dan{
+        grid-template-columns: 60%;
+        row-gap: 4%;
+    }
+
+    .about_u{
+        margin-top: 25%;
+        width: 70%;
+    }
+
+    #select_month{
+        
+
+        font-size: 0.8rem;
+        line-height: 20px;
+        padding: 10px;
+        height: 20%;
+        border:1px solid rgba(182, 184, 191, 1);
+
+    }
+
+    #first_name,
+    #second_name,
+    #select_grazdanstvo,
+    #insert_spawn,
+    #insert_obychenie,
+    #insert_about_u,
+    #select_day,
+    #select_year{
+
+        margin-bottom: 5%;
+        font-size: 0.8rem;
+        line-height: 20px;
+        padding: 10px;
+ 
+        border:1px solid rgba(182, 184, 191, 1);
+
+    }
+}
+
+@media screen and (max-width:420px){
+    .zapolnite_personal_dan{
+        grid-template-columns: 50%;
+        column-gap: 0%;
+    }
+
+    .about_u{
+        width: 58%;
+    }
+}
+
+
+
+
+/* PHOTO */
+
+.upload_photo{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 200px auto;
+    column-gap: 5%;
+    margin-bottom: 5%;
+}
+
+.upload_photo_text{
+    display: grid;
+    text-align: left;
+    margin: auto auto auto 0%;
+}
+
+.upload_photo_text_down{
+    color:rgba(182, 184, 191, 1) ;
+}
+
+
+
+@media screen and (max-width:500px){
+    .upload_photo_svg{
+        width: 170px;
+        height: 120px;
+    }
+
+    .upload_photo{
+        column-gap: 0%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .upload_photo_svg{
+        width: 150px;
+        height: 100px;
+    }
+
+    .upload_photo{
+        grid-template-columns: 160px auto ;
+    }
+
+    .upload_photo_text{
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* BLOCK 2 */
+
+
+
+.block2{
+    display: grid;
+}
+
+.known_language_top{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 3%;
+    margin-top: 5%;
+
+}
+
+.known_language select{
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 5%;
+}
+
+#native_language {
+
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+    border:1px solid rgba(182, 184, 191, 1);
+
+}
+
+#russian_level{
+    font-size: 1rem;
+    line-height: 24px;
+
+    font-weight:400;
+    border:1px solid rgba(182, 184, 191, 1);
+
+}
+
+.know_in_language{
+    display: grid;
+}
+
+.know_in_language input {
+    width: 80.25%;
+    padding: 15px 15px 15px 15px;
+
+}
+
+#foreign_languages{
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+
+    border:1px solid rgba(182, 184, 191, 1);
+
+}
+
+@media screen and (max-width:745px){
+    .known_language_top{
+        grid-template-columns: 80%;
+        column-gap: 0%;
+    }
+
+    .know_in_language{
+        width: 93%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .known_language_top{
+        grid-template-columns: 70%;
+        column-gap: 0%;
+    }
+
+    .know_in_language{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .known_language_top{
+        grid-template-columns: 60%;
+        column-gap: 0%;
+    }
+
+    #foreign_languages,
+    #russian_level,
+    #native_language{
+        font-size: 0.8rem;
+
+    }
+
+    .know_in_language{
+        width: 70%;
+    }
+
+    .known_language select{
+        padding: 10px;
+    }
+
+    .know_in_language input {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .known_language_top{
+        grid-template-columns: 50%;
+        row-gap: 2%;
+    }
+
+    .know_in_language{
+        width: 69%;
+        margin-top: 3%;
+    }
+}
+
+
+/* BLOCK 3 */
+
+.block3{
+    margin-top: 5%;
+    display: grid;   
+}
+
+.family{
+    margin-top: 5%;
+    display: grid;
+}
+
+.family input{
+    width: 80.21%;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 2%;
+}
+
+.family_in_russian{
+    display: grid;
+}
+
+#family_person{
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+    border:1px solid rgba(182, 184, 191, 1);
+
+
+}
+
+
+.family_in_russian select{
+    width: 50%;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 5%;
+}
+
+#family_in_ru{
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+    border:1px solid rgba(182, 184, 191, 1);
+
+
+}
+
+@media screen and (max-width:745px){
+    #family_person{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:600px){
+    #family_person{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:500px){
+    #family_person{
+        width: 56%;
+    }
+
+    .family_in_russian{
+        margin-top: 3%;
+    }
+    
+    .family_in_russian select{
+        padding: 10px;
+    }
+    
+    .family input{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    #family_person,
+    #family_in_ru{
+        font-size: 0.8rem;
+    }
+
+    }
+
+
+
+@media screen and (max-width:420px){
+    #family_person{
+        width: 47%;
+    }
+}
+
+
+
+/* BLOCK4 */
+
+
+.block4 {
+    display: grid;
+    row-gap: 20px; /* Отступы между рядами */
+}
+
+.career {
+    display: grid;
+    width: 82%;
+}
+
+#work_in_russia {
+    width: 97%;
+    padding: 10px;
+    font-size: 1rem;
+
+    border:1px solid rgba(182, 184, 191, 1);
+    resize: none;
+}
+
+.second_row_in_4 {
+    display: grid;
+    grid-template-columns: 40% 40%; /* Колонки для ожидаемого заработка и открытия бизнеса */
+    column-gap: 2%; /* Пробел между колонками */
+}
+
+.expected_salary {
+    display: grid;
+}
+
+.salary_range {
+    display: grid;
+    grid-template-columns: 25% 25% 15%; /* Поля для диапазона и валюты в одной строке */
+    column-gap: 2%;
+}
+
+.salary_front{
+    width: 50%;
+}
+#salary_from,
+#salary_to,
+#currency {
+    padding: 10px;
+    font-size: 1rem;
+
+    border:1px solid rgba(182, 184, 191, 1);
+}
+
+.business_in_russia {
+    display: grid;
+}
+
+#business_russia {
+    padding: 10px;
+    font-size: 1rem;
+
+    border:1px solid rgba(182, 184, 191, 1);
+}
+
+.current_job {
+    display: grid;
+}
+
+#current_job_position {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+
+    border:1px solid rgba(182, 184, 191, 1);
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:1035px) {
+    .career{
+        width: 80%;
+    }
+
+    .salary_range {
+        grid-template-columns: 20% 20% 12% !important;
+    }
+}
+
+@media  screen and (max-width: 777px){
+    .second_row_in_4{
+        margin-top: 1%;
+        grid-template-columns: 80%;
+        row-gap: 15%;
+    }
+    
+    #current_job_position{
+        width: 76%;
+    }
+
+    .current_job{
+        margin-top: 4%;
+    }
+
+    .salary_range{
+        grid-template-columns: 30% 30% 15% !important;
+        
+    }
+}
+
+@media  screen and (max-width: 666px){
+    .salary_range{
+        grid-template-columns: 25% 25% 15% !important;
+        
+    }
+}
+
+@media  screen and (max-width: 600px){
+    .career{
+        width: 70%;
+    }
+
+    .business_in_russia{
+        width: 90%;
+    }
+
+    #current_job_position{
+        width: 68%;
+    }
+}
+
+@media  screen and (max-width: 500px){
+    .career{
+        width: 58%;
+    }
+
+    .work_in_russia{
+        font-size: 0.9rem;
+    }
+
+    .salary_range{
+        grid-template-columns: 20% 20% 12% !important;
+        
+    }
+
+    #salary_from,
+    #salary_to,
+    #currency {
+        padding: 10px;
+        font-size: 0.9rem;
+
+        border:1px solid rgba(182, 184, 191, 1);
+    }
+
+    .business_in_russia{
+        width: 75%;
+    }
+
+    #business_russia {
+        padding: 10px;
+        font-size: 0.8rem;
+
+        border:1px solid rgba(182, 184, 191, 1);
+    }
+
+    #current_job_position{
+        width: 55%;
+        font-size: 0.9rem;
+    }
+}
+
+@media  screen and (max-width: 420px){
+    .career{
+        width: 48%;
+    }
+
+    
+    .salary_range{
+        grid-template-columns: 18% 18% 13% !important;
+        
+    }
+
+    .business_in_russia{
+        width: 65%;
+    }
+
+
+    #current_job_position{
+        width: 47%;
+    }
+
+}
+
+
+
+/* BLOCK 5 */
+
+.block5{
+    display: grid;
+}
+
+.dop_qastions{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: repeat(4, auto);
+    column-gap: 2%;
+}
+
+.q{
+    display: grid;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.q select{
+    padding: 15px 15px 15px 15px;
+
+}
+
+#qastion_01,
+#qastion_02,
+#qastion_03,
+#qastion_04,
+#qastion_05,
+#qastion_06,
+#qastion_07,
+#qastion_08 {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+    border:1px solid rgba(182, 184, 191, 1);
+
+}
+
+@media screen and (max-width:1035px){
+    .dop_qastions{
+        grid-template-columns: 80%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .dop_qastions{
+        grid-template-columns: 72%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .dop_qastions{
+        grid-template-columns: 62%;
+        row-gap: 2%;
+    }
+
+    #qastion_01,
+#qastion_02,
+#qastion_03,
+#qastion_04,
+#qastion_05,
+#qastion_06,
+#qastion_07,
+#qastion_08 {
+    font-size: 0.9rem;
+    line-height: 20px;
+    font-weight:400;
+    border:1px solid rgba(182, 184, 191, 1);
+
+    padding: 10px;
+}
+}
+
+@media screen and (max-width:420px){
+    .dop_qastions{
+        grid-template-columns: 52%;
+    }
+}
+
+
+
+/* BLOCK 6 */
+
+.block6{
+    display: grid;
+}
+
+.block_contact{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 2%;
+}
+
+.phone_number{
+    display: grid;
+}
+
+.phone_region{
+    /* width: 100px; */
+    display: grid;
+    grid-template-columns: 20% 65%;
+    column-gap: 10%;
+    /* width: 20%; */
+}
+
+#phone_num{
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+    border:1px solid rgba(182, 184, 191, 1);
+    padding: 15px 15px 15px 15px;
+
+}
+
+.insert_number{
+    width: 100%;
+    /* margin-top: 6%; */
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+
+#insert_phone_number{
+    width: 80%;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+    padding: 13px 13px 13px 13px;
+    border:1px solid rgba(182, 184, 191, 1);
+
+}
+
+.email{
+    display: grid;
+}
+
+#insert_email{
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight:400;
+    padding: 13px 13px 13px 13px;
+    border:1px solid rgba(182, 184, 191, 1);
+
+
+}
+
+@media screen and (max-width:800px){
+    .block_contact{
+        grid-template-columns: 80%;
+    }
+
+    .insert_number{
+        width: 100%;
+    }
+
+    .email{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .email{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .email{
+        width: 80%;
+    }
+
+    
+    .block6{
+        margin-top: 25%;
+    }
+
+    .block_contact{
+        margin-top: 3%;
+    }
+
+    #insert_email{
+        font-size: 0.9rem;
+        line-height: 20px;
+        font-weight:400;
+        padding: 10;
+        border:1px solid rgba(182, 184, 191, 1);
+
+    }
+
+    .phone_region{
+        grid-template-columns: 25% 70%;
+        column-gap: 2%;
+    }
+
+    #phone_num,
+    #insert_phone_number{
+        width: 80%;
+        font-size: 0.9rem;
+        line-height: 20px;
+        font-weight:400;
+        padding:12px;
+        border:1px solid rgba(182, 184, 191, 1);
+
+    }
+
+}
+
+
+/* SEND FORMA */
+
+.send_forma{
+    margin-top: 7%;
+}
+
+.block_forma{
+    width: 96px;
+    height: 28px;
+    background-color: rgba(214, 216, 221, 1);
+    text-align: center;
+    padding: 10px;
+
+}
+
+.send_forma a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EENNDD */
+
+.end{
+    display: flex;
+    /* height: 380px; */
+    /* width: 1440px; */
+    margin-top: 10%;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.end_with_logo{
+    display: block;
+    /* height: 316px; */
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.end_logo{
+    font-size: 1.6875rem;
+    color: rgba(12, 19, 161, 1);
+}
+
+.end_name_company{
+    margin-top: 150%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(135, 135, 135, 1);
+}
+
+.agen_yslyg_contact_for_big_dev{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 10%;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.agen_yslyg_contact_for_big_dev a{
+    text-decoration: none;
+    color:rgba(135, 135, 135, 1);
+}
+
+.agen_yslyg_contact a{
+    text-decoration: none;
+    color:rgba(135, 135, 135, 1);
+}
+
+.end_agenstvo{
+    display: block;
+    /* width: 272px; */
+}
+
+.zagolovok_end{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.text_in_end{
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(135, 135, 135, 1);
+    margin-bottom: 8%;
+}
+
+.end_tg_wp{
+    margin-top: 5%;
+}
+
+.end_for_small_devise{
+    display: none;
+    /* height: 380px; */
+    /* width: 1440px; */
+    margin-top: 10%;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.end_with_logo{
+    display: grid;
+    /* height: 316px; */
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.end_logo{
+    font-size: 1.6875rem;
+    color: rgba(12, 19, 161, 1);
+}
+
+.end_name_company{
+    margin-top: 150%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(135, 135, 135, 1);
+}
+
+.agen_yslyg_contact{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+ 
+.end_agenstvo{
+    display: block;
+    /* width: 272px; */
+}
+
+.zagolovok_end{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.text_in_end{
+    width: 100%;
+    margin-top: 5%;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(135, 135, 135, 1);
+}
+
+.end_tg_wp{
+    margin-top: 5%;
+    display: flex;
+}
+
+.tg{
+    margin-right: 5%;
+}
+
+.end_tri{
+    display:none;
+}
+
+.end_tri a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+}
+
+
+.end_for_small{
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.end_logo_small{
+    width: 100%;
+    font-size: 1.6875rem;
+    color: rgba(12, 19, 161, 1);
+}
+
+.end_name_company_small{
+    /* margin-top: 150%; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(135, 135, 135, 1);
+}
+
+@media (max-width:1040px){
+    .end_for_small_devise{
+        display:block
+    }
+    .end{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:500px){
+    .end_tri{
+        margin-top: 3%;
+        padding-top: 5%;
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        text-align: center;
+    }
+    .agen_yslyg_contact{
+        display: none;
+    }
+    .end_for_small{
+        display: block;
+        margin-top:5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div{
+    display: inline-block;
+    background-size: contain;         
+
+}
+/* Dropdown Button */
+.dropbtn {
+    /* font-family: Circe; */
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 28px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+.dropbtnrus {
+    /* font-family: Circe; */
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: rgba(245, 245, 245, 1);
+    color: rgb(0, 0, 0);
+
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    border-radius: 7px;
+    display: none;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 100; */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(0, 0, 0) ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #bab8b8;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #bab8b8;}
+
+.dropdown:hover .dropbtnrus {background-color: white;}
+html{
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    display:block;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 1%;
+}
+
+select{
+    background-color:white;;
+    color:rgba(135, 135, 135, 1);
+    border:1px solid rgba(182, 184, 191, 1);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
