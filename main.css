@@ -1423,6 +1423,8 @@ margin: 6% 0% 5% 0%
     }
 
     .persanal_data{
+        display: grid;
+        row-gap: 4%;
         margin-top: 10%;
         /* width: 402px;  */
         /* height: 50px; */
@@ -2276,3 +2278,375 @@ img {
     max-width: 100%;
     display:block;
 }
+
+
+
+.poppip_withtext{
+    display: none;
+}
+
+
+.pop_pip{
+    height: 433px;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 35% 60%;
+}
+
+.text_about_pop_pip{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.big_text{
+    max-height: 280px;
+    overflow: scroll;
+    font-size: 1rem;
+}
+
+.photo_source{
+    color: rgba(135, 135, 135, 1);
+    margin-top: 0%;
+}
+
+.person_data{
+    margin-top: 4%;
+}
+
+.person_name{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+
+.person_prof{
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(135, 135, 135, 1)
+}
+
+.person_links{
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.link_for_personal{
+    display: flex;
+    text-align: left;
+    align-self: end;
+    text-transform: uppercase;
+
+}
+
+.text_link{
+    margin-bottom: 5%;
+}
+
+.text_link a{
+    text-decoration: none;
+    color: rgba(135, 135, 135, 1)
+}
+
+.hrefkvadrat_for_pop_pip{
+    text-align: left;
+    align-self: end;
+    margin-left:4%;
+    margin-bottom: 7%;
+}
+
+.buttoms{
+    text-align: right;
+    align-self: end;
+    margin-bottom: -2%;
+}
+
+.galary{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 2%;
+}
+
+.dgeff_monson{
+    background-image:url(/10e4f2ff11a357f19e078795f6fd4827.png) ;
+
+}
+
+.teodor_kurentiz{
+    background-image: url(/66f059cf9dd40fe8a37d13f80ca2e894.png);
+}
+
+.pol_cerrol{
+    background-image: url(/e529f38dc0e498288255286d9abb3b73.png);
+}
+
+.steven_sigal{
+    background-image: url(/cab830ad4d712e900cf659d20842952c.jpg);
+}
+
+
+.person_data_galary{
+    margin-top: auto;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.person_name_galary{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 24px;
+    color: white;
+}
+
+.person_prof_galary{
+    font-weight: 400;
+    line-height: 24px;
+    color:  white;
+}
+
+.popular_pip {
+    display: none;
+}
+
+.popular_pip.active {
+    display: block;
+}
+
+/* .popular_pip {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.popular_pip.active {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+    z-index: 1;
+} */
+
+
+.photo_01,
+.photo_02,
+.photo_03{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo_01{
+    filter: grayscale(1);
+}
+
+
+.person_data_galary {
+    position: relative; /* Размещаем текст поверх */
+    z-index: 5; /* Убеждаемся, что текст выше */
+    filter: none; /* Убираем действие фильтра */
+    color: #000000; /* Укажите желаемый цвет текста */
+}
+.photo_02,
+.photo_03 {
+    position: relative;
+    width: 100%; /* Укажите ширину блока */
+    height: 100%; /* Укажите высоту блока */
+    overflow: hidden; /* Скрываем всё, что выходит за пределы */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+    filter: grayscale(1) opacity(30%);
+    z-index: 0; /* Помещаем фон ниже текста */
+}
+
+.person_data_galary {
+    position: relative;
+    z-index: 1; /* Помещаем текст поверх фона */
+}
+
+
+@media screen and (max-width:1024px) {
+    .pop_pip{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .photo_02,
+    .photo_03 {
+       display: none;
+    }
+
+    .galary{
+        grid-template-columns: auto;
+    }
+     
+}
+
+@media screen and (max-width:916px){
+    .big_text{
+        font-size: 0.9rem;
+    }
+
+    .photo_source{
+        font-size: 0.9rem;
+    }
+
+    .person_prof{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:816px){
+    .big_text{
+        font-size: 0.85rem;
+    }
+
+    .photo_source{
+        font-size: 0.85rem;
+    }
+
+    .person_prof{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:630px){
+    .pop_pip{
+        grid-template-columns: 60% 40%;
+    }
+
+    .big_text{
+        font-size: 0.8rem;
+    }
+
+    .photo_source{
+        font-size: 0.8rem;
+    }
+
+    .person_prof{
+        font-size: 0.8rem;
+    }
+}
+
+
+.slider_poppip_phone{
+    display: none;
+}
+
+@media screen and (max-width:420px){
+    .slider_poppip{
+        display: none;
+    }
+
+    .slider_poppip_phone{
+        display: block;
+    }
+
+}
+
+
+
+.background_poppip_phone{
+    height: 433px;
+    display: flex;
+    flex-direction: column;
+    filter: grayscale(1) opacity(0.8);
+}
+
+
+.poppip_phone_big_top_text{
+    font-size: 0.9rem;
+    width: 95%;
+    margin-left: 5%;
+    max-height: 260px;
+    overflow-x:hidden;
+    color: rgb(255, 255, 255);
+}
+
+.poppip_phone_photo_source{
+    margin-top: 5%;
+    font-size: 0.8rem;
+    width: 95%;
+    margin-left: 5%;
+    color: rgba(135, 135, 135, 1);
+}
+
+.personal_data_poppip_data{
+    font-size: 0.8rem;
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.person_name_poppip_name{
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+
+.person_name_poppip_prof{
+    color: white;
+}
+
+.poppip_personal_links{
+    margin-top: auto;
+
+}
+
+.link_poppip_phone{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.poppip_phone_text_link{
+    margin-top: auto;
+    margin-bottom: 4%;
+    display: flex;
+}
+
+
+.poppip_phone_text_link a{
+    margin-left: 5%;
+    color: rgba(135, 135, 135, 1);
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.hrefkvadrat_for_pop_pip_phone{
+    margin-left: 6%;
+}
+
+.buttom_poppip_phone{
+    text-align: end;
+    margin-right: 5%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
