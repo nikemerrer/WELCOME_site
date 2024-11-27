@@ -357,7 +357,7 @@ margin: 6% 0% 5% 0%
 
 @media screen and (max-width: 425px) {
     .toggle-search:checked + label + .search-bar{
-        width: 220px;
+        width: 165px;
     }
 }
 
@@ -610,6 +610,7 @@ margin: 6% 0% 5% 0%
     margin-top:10%;
     margin-left: 10%;
     width: 50%;
+    height: 50%;
 }
 
 /* In pic left bottom words */
@@ -764,12 +765,12 @@ margin: 6% 0% 5% 0%
     }
 
     .in_pic_lbwords{
-
+        margin-bottom: 10%;
         font-size: 1.5rem;
     }
 
     .in_pic_ltwords{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .pagination{
@@ -818,7 +819,8 @@ margin: 6% 0% 5% 0%
     }
 
     .bottom_text_inblock{
-        font-size: 0.6rem;
+        margin-top: -20%;
+        font-size: 0.7rem;
     }
 
         
