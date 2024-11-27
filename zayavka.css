@@ -10,6 +10,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+::-webkit-scrollbar{
+    
+}
  
 
 
@@ -297,7 +301,7 @@ margin: 6% 0% 5% 0%
 }
 
 .lupa {
-
+    margin-top: 30%;
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -582,15 +586,69 @@ margin: 6% 0% 5% 0%
 
 }
 
+#select_day,
+#select_month,
+#select_year{
+    margin-top: auto;
+    margin-bottom:21px;
+}
+
 .choose_d_roz{
     display: grid;
     align-items: center;
+}
+
+@media screen and (max-width:950px){
+    #select_day,
+    #select_month,
+    #select_year{
+        margin-top: auto;
+        margin-bottom:17px;
+    }
+
+    .about_u{
+        width: 98%;
+    }
 }
 
 @media screen and (max-width:815px){
     .zapolnite_personal_dan{
         grid-template-columns: 80%;
         column-gap: 0%;
+    }
+
+    #select_day,
+    #select_month,
+    #select_year{
+        margin-top: auto;
+        margin-bottom:auto;
+    }
+    #first_name,
+    #second_name,
+    #insert_spawn,
+    #insert_obychenie,
+    #insert_about_u{
+        width: 472px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #select_grazdanstvo{
+        width: 500px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */  
+    }
+
+    #select_day,
+    #select_year,
+    #select_month{
+        width: 157px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    
     }
 
 
@@ -604,6 +662,34 @@ margin: 6% 0% 5% 0%
     .zapolnite_personal_dan{
         grid-template-columns: 70%;
         /* column-gap: 0%; */
+    }
+
+    #first_name,
+    #second_name,
+    #insert_spawn,
+    #insert_obychenie,
+    #insert_about_u{
+        width: 400px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #select_grazdanstvo{
+        width: 430px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */  
+    }
+
+    #select_day,
+    #select_year,
+    #select_month{
+        width: 134px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    
     }
 
 
@@ -625,33 +711,33 @@ margin: 6% 0% 5% 0%
         width: 70%;
     }
 
-    #select_month{
-        
-
-        font-size: 0.8rem;
-        line-height: 20px;
-        padding: 10px;
-        height: 20%;
-        border:1px solid rgba(182, 184, 191, 1);
-
-    }
 
     #first_name,
     #second_name,
-    #select_grazdanstvo,
     #insert_spawn,
     #insert_obychenie,
-    #insert_about_u,
+    #insert_about_u{
+        width: 330px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #select_grazdanstvo{
+        width: 360px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */  
+    }
+
     #select_day,
-    #select_year{
-
-        margin-bottom: 5%;
-        font-size: 0.8rem;
-        line-height: 20px;
-        padding: 10px;
- 
-        border:1px solid rgba(182, 184, 191, 1);
-
+    #select_year,
+    #select_month{
+        width: 112.5px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    
     }
 }
 
@@ -663,6 +749,34 @@ margin: 6% 0% 5% 0%
 
     .about_u{
         width: 58%;
+    }
+
+    #first_name,
+    #second_name,
+    #insert_spawn,
+    #insert_obychenie,
+    #insert_about_u{
+        width: 250px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #select_grazdanstvo{
+        width: 278px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */  
+    }
+
+    #select_day,
+    #select_year,
+    #select_month{
+        width: 87px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    
     }
 }
 
@@ -785,8 +899,19 @@ margin: 6% 0% 5% 0%
         column-gap: 0%;
     }
 
-    .know_in_language{
-        width: 93%;
+    #foreign_languages{
+        width: 460px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #native_language,
+    #russian_level{
+        width: 615px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
 }
 
@@ -796,9 +921,27 @@ margin: 6% 0% 5% 0%
         column-gap: 0%;
     }
 
-    .know_in_language{
-        width: 80%;
+    #foreign_languages{
+        width: 395px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
+
+    #native_language,
+    #russian_level{
+        width: 610px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #foreign_languages,
+    #native_language,
+    #russian_level{
+        font-size: 0.9rem;
+    }
+
 }
 
 @media screen and (max-width:500px){
@@ -807,16 +950,27 @@ margin: 6% 0% 5% 0%
         column-gap: 0%;
     }
 
+    #foreign_languages{
+        width: 340px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #native_language,
+    #russian_level{
+        width: 600px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
     #foreign_languages,
-    #russian_level,
-    #native_language{
-        font-size: 0.8rem;
-
+    #native_language,
+    #russian_level{
+        font-size: 0.85rem;
     }
 
-    .know_in_language{
-        width: 70%;
-    }
 
     .known_language select{
         padding: 10px;
@@ -829,13 +983,29 @@ margin: 6% 0% 5% 0%
 
 @media screen and (max-width:420px){
     .known_language_top{
-        grid-template-columns: 50%;
-        row-gap: 2%;
+        grid-template-columns: 80%;
+        column-gap: 0%;
     }
 
-    .know_in_language{
-        width: 69%;
-        margin-top: 3%;
+
+    #foreign_languages{
+        width: 255px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #native_language,
+    #russian_level{
+        width: 277px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    #foreign_languages,
+    #native_language,
+    #russian_level{
+        font-size: 0.8rem;
     }
 }
 
@@ -867,8 +1037,6 @@ margin: 6% 0% 5% 0%
     line-height: 24px;
     font-weight:400;
     border:1px solid rgba(182, 184, 191, 1);
-
-
 }
 
 
@@ -883,52 +1051,93 @@ margin: 6% 0% 5% 0%
     line-height: 24px;
     font-weight:400;
     border:1px solid rgba(182, 184, 191, 1);
-
-
+    color: black;
 }
 
 @media screen and (max-width:745px){
     #family_person{
-        width: 75%;
+        width: 460px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
+
+    #family_in_ru{
+            width: 492px; /* Ограничьте ширину */
+            max-width: 100%; /* Чтобы не выходить за границы родителя */
+            overflow-x: scroll;
+            white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    .family_in_russian select{
+        width: 100%;
+    }
+
+    #family_person,
+    #family_in_ru{
+        font-size: 0.9rem;
+    }
+
 }
 
 @media screen and (max-width:600px){
     #family_person{
-        width: 65%;
+        width: 395px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #family_in_ru{
+            width: 427px; /* Ограничьте ширину */
+            max-width: 100%; /* Чтобы не выходить за границы родителя */
+            overflow-x: scroll;
+            white-space: nowrap; /* Отключите перенос текста */
     }
 }
 
 @media screen and (max-width:500px){
     #family_person{
-        width: 56%;
+        width: 328px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
 
-    .family_in_russian{
-        margin-top: 3%;
-    }
-    
-    .family_in_russian select{
-        padding: 10px;
-    }
-    
-    .family input{
-        padding: 10px;
-        font-size: 0.8rem;
+    #family_in_ru{
+            width: 360px; /* Ограничьте ширину */
+            max-width: 100%; /* Чтобы не выходить за границы родителя */
+            overflow-x: scroll;
+            white-space: nowrap; /* Отключите перенос текста */
     }
 
     #family_person,
     #family_in_ru{
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
-    }
+}
 
 
 
 @media screen and (max-width:420px){
     #family_person{
-        width: 47%;
+        width: 245px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #family_in_ru{
+            width: 277px; /* Ограничьте ширину */
+            max-width: 100%; /* Чтобы не выходить за границы родителя */
+            overflow-x: scroll;
+            white-space: nowrap; /* Отключите перенос текста */
+    }
+
+    #family_person,
+    #family_in_ru{
+        font-size: 0.8rem;
     }
 }
 
@@ -1008,6 +1217,8 @@ margin: 6% 0% 5% 0%
     margin-bottom: 5%;
 }
 
+
+
 @media screen and (max-width:1035px) {
     .career{
         width: 80%;
@@ -1019,6 +1230,8 @@ margin: 6% 0% 5% 0%
 }
 
 @media  screen and (max-width: 777px){
+
+
     .second_row_in_4{
         margin-top: 1%;
         grid-template-columns: 80%;
@@ -1033,93 +1246,138 @@ margin: 6% 0% 5% 0%
         margin-top: 4%;
     }
 
-    .salary_range{
-        grid-template-columns: 30% 30% 15% !important;
-        
-    }
 }
 
 @media  screen and (max-width: 666px){
+    #work_in_russia,
+    #current_job_position{
+        width: 470px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    #salary_from,
+    #salary_to,
+    #currency{
+        width: 185px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    #business_russia{
+        width: 490px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
     .salary_range{
-        grid-template-columns: 25% 25% 15% !important;
-        
+        gap: 15%;  
     }
 }
 
 @media  screen and (max-width: 600px){
-    .career{
-        width: 70%;
-    }
-
-    .business_in_russia{
-        width: 90%;
-    }
-
+    #work_in_russia,
     #current_job_position{
-        width: 68%;
+        width: 405px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
-}
-
-@media  screen and (max-width: 500px){
-    .career{
-        width: 58%;
+    #salary_from,
+    #salary_to,
+    #currency{
+        width: 159px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
-
-    .work_in_russia{
-        font-size: 0.9rem;
-    }
-
-    .salary_range{
-        grid-template-columns: 20% 20% 12% !important;
-        
+    #business_russia{
+        width: 425px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
 
     #salary_from,
     #salary_to,
-    #currency {
-        padding: 10px;
-        font-size: 0.9rem;
-
-        border:1px solid rgba(182, 184, 191, 1);
-    }
-
-    .business_in_russia{
-        width: 75%;
-    }
-
-    #business_russia {
-        padding: 10px;
-        font-size: 0.8rem;
-
-        border:1px solid rgba(182, 184, 191, 1);
-    }
-
-    #current_job_position{
-        width: 55%;
+    #currency,
+    #work_in_russia,
+    #current_job_position,
+    #business_russia{
         font-size: 0.9rem;
     }
 }
 
-@media  screen and (max-width: 420px){
-    .career{
-        width: 48%;
-    }
-
-    
-    .salary_range{
-        grid-template-columns: 18% 18% 13% !important;
-        
-    }
-
-    .business_in_russia{
-        width: 65%;
-    }
-
-
+@media  screen and (max-width: 500px){
+    #work_in_russia,
     #current_job_position{
-        width: 47%;
+        width: 340px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    #salary_from,
+    #salary_to,
+    #currency{
+        width: 152px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    #business_russia{
+        width: 360px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    .salary_range{
+        gap: 10%;
     }
 
+    #salary_from,
+    #salary_to,
+    #currency,
+    #work_in_russia,
+    #current_job_position,
+    #business_russia{
+        font-size: 0.85rem;
+    }
+}
+
+@media  screen and (max-width: 420px){
+    #work_in_russia,
+    #current_job_position{
+        width: 255px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    #salary_from,
+    #salary_to,
+    #currency{
+        width: 112px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    #business_russia{
+        width: 278px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
+    .salary_range{
+        gap: 10%;
+    }
+
+    #salary_from,
+    #salary_to,
+    #currency,
+    #work_in_russia,
+    #current_job_position,
+    #business_russia{
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -1167,11 +1425,43 @@ margin: 6% 0% 5% 0%
     .dop_qastions{
         grid-template-columns: 80%;
     }
+
+}
+
+@media screen and (max-width:745px){
+
+    #qastion_01,
+    #qastion_02,
+    #qastion_03,
+    #qastion_04,
+    #qastion_05,
+    #qastion_06,
+    #qastion_07,
+    #qastion_08 {
+        width: 490px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
+    }
 }
 
 @media screen and (max-width:600px){
     .dop_qastions{
         grid-template-columns: 72%;
+    }
+
+    #qastion_01,
+    #qastion_02,
+    #qastion_03,
+    #qastion_04,
+    #qastion_05,
+    #qastion_06,
+    #qastion_07,
+    #qastion_08 {
+        width: 420px; /* Ограничьте ширину */
+        max-width: 100%; /* Чтобы не выходить за границы родителя */
+        overflow-x: scroll;
+        white-space: nowrap; /* Отключите перенос текста */
     }
 }
 
@@ -1189,6 +1479,8 @@ margin: 6% 0% 5% 0%
 #qastion_06,
 #qastion_07,
 #qastion_08 {
+    width: 360px; /* Ограничьте ширину */
+
     font-size: 0.9rem;
     line-height: 20px;
     font-weight:400;
@@ -1201,6 +1493,17 @@ margin: 6% 0% 5% 0%
 @media screen and (max-width:420px){
     .dop_qastions{
         grid-template-columns: 52%;
+    }
+
+    #qastion_01,
+    #qastion_02,
+    #qastion_03,
+    #qastion_04,
+    #qastion_05,
+    #qastion_06,
+    #qastion_07,
+    #qastion_08 {
+        width: 275px; /* Ограничьте ширину */
     }
 }
 
@@ -1225,8 +1528,8 @@ margin: 6% 0% 5% 0%
 .phone_region{
     /* width: 100px; */
     display: grid;
-    grid-template-columns: 20% 65%;
-    column-gap: 10%;
+    grid-template-columns: 30% 70%;
+    /* column-gap: 10%; */
     /* width: 20%; */
 }
 
@@ -1235,7 +1538,8 @@ margin: 6% 0% 5% 0%
     line-height: 24px;
     font-weight:400;
     border:1px solid rgba(182, 184, 191, 1);
-    padding: 15px 15px 15px 15px;
+    padding: 10px;
+    width: 85%;
 
 }
 
@@ -1251,8 +1555,10 @@ margin: 6% 0% 5% 0%
     font-size: 1rem;
     line-height: 24px;
     font-weight:400;
-    padding: 13px 13px 13px 13px;
+    padding: 10px;
     border:1px solid rgba(182, 184, 191, 1);
+    margin-top: auto;
+    /* margin-bottom:px; */
 
 }
 
@@ -1261,10 +1567,12 @@ margin: 6% 0% 5% 0%
 }
 
 #insert_email{
+    margin-top: auto;
+    /* margin-bottom: 3px; */
     font-size: 1rem;
     line-height: 24px;
     font-weight:400;
-    padding: 13px 13px 13px 13px;
+    padding: 10px;
     border:1px solid rgba(182, 184, 191, 1);
 
 
@@ -1272,7 +1580,11 @@ margin: 6% 0% 5% 0%
 
 @media screen and (max-width:800px){
     .block_contact{
-        grid-template-columns: 80%;
+        grid-template-columns: 85%;
+    }
+
+    #insert_phone_number{
+        width: 94%;
     }
 
     .insert_number{
@@ -1286,7 +1598,12 @@ margin: 6% 0% 5% 0%
 
 @media screen and (max-width:600px){
     .email{
-        width: 90%;
+        width: 92%;
+    }
+
+    
+    #insert_phone_number{
+        width: 82%;
     }
 
 }
@@ -1294,6 +1611,14 @@ margin: 6% 0% 5% 0%
 @media screen and (max-width:500px){
     .email{
         width: 80%;
+    }
+
+    #insert_phone_number{
+        width: 87%;
+    }
+
+    #phone_num{
+        width: 100%;
     }
 
     
@@ -1309,27 +1634,47 @@ margin: 6% 0% 5% 0%
         font-size: 0.9rem;
         line-height: 20px;
         font-weight:400;
-        padding: 10;
+        padding: 10px;
         border:1px solid rgba(182, 184, 191, 1);
 
     }
 
     .phone_region{
-        grid-template-columns: 25% 70%;
+        grid-template-columns: 20% 60%;
         column-gap: 2%;
     }
 
     #phone_num,
     #insert_phone_number{
-        width: 80%;
         font-size: 0.9rem;
         line-height: 20px;
         font-weight:400;
         padding:12px;
         border:1px solid rgba(182, 184, 191, 1);
-
     }
 
+}
+
+@media screen and (max-width:420px){
+    #insert_phone_number{
+        width: 100%;
+    }
+
+    #phone_num{
+        width: 100%;
+    }
+
+    #insert_email{
+        width: 89%;
+    }
+
+    .email{
+        width: 100%;
+    }
+
+    .phone_region{
+        grid-template-columns: 26% 60%;
+    }
 }
 
 
@@ -1672,9 +2017,17 @@ label {
 }
 
 select{
-    background-color:white;;
-    color:rgba(135, 135, 135, 1);
-    border:1px solid rgba(182, 184, 191, 1);
     -webkit-appearance: none;
     -moz-appearance: none;
+    background: transparent;
+    background-image: url("/Polygon\ 1.svg");
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    color:rgba(135, 135, 135, 1);
+    border:1px solid rgba(182, 184, 191, 1);
+
 }
+
+
+
