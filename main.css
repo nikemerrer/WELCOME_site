@@ -1765,6 +1765,7 @@ margin: 6% 0% 5% 0%
 
 @media screen and (max-width: 425px){
     .text_news{
+        align-self: center;
         font-size: 1.5rem;
     }
     .link_on_all_news{
@@ -1815,14 +1816,16 @@ margin: 6% 0% 5% 0%
     }
 }
 
-@media screen and (max-width:350px){
+@media screen and (max-width:365px){
     .link_on_all_news{
-        width: 40% !important;
+        width: 50% !important;
     }
 }
 
 .link_on_all_news a {
     /* margin-left: 0.1%; */
+    margin-left: auto;
+    /* margin-right: 5%; */
     text-decoration: none;
     color: rgba(12, 19, 161, 1);
 }
