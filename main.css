@@ -2309,6 +2309,7 @@ img {
 }
 
 .person_data{
+    display: grid;
     margin-top: 4%;
 }
 
@@ -2327,7 +2328,7 @@ img {
 .person_links{
     margin-top: auto;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
 }
 
 .link_for_personal{
@@ -2581,6 +2582,7 @@ img {
 }
 
 .personal_data_poppip_data{
+    display: grid;
     font-size: 0.8rem;
     width: 95%;
     margin-left: 5%;
@@ -2604,6 +2606,7 @@ img {
 }
 
 .link_poppip_phone{
+    margin-left: 5%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -2617,7 +2620,7 @@ img {
 
 .poppip_phone_text_link a{
     margin-left: 5%;
-    color: rgba(135, 135, 135, 1);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-decoration: none;
 
@@ -2632,6 +2635,7 @@ img {
     margin-right: 5%;
 
 }
+
 
 
 

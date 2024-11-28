@@ -1184,6 +1184,14 @@ margin: 6% 0% 5% 0%
 .salary_front{
     width: 50%;
 }
+
+#salary_from,
+#salary_to{
+    color: black;
+
+}
+
+
 #salary_from,
 #salary_to,
 #currency {
@@ -2024,7 +2032,7 @@ select{
     background-repeat: no-repeat;
     background-position-x: 97%;
     background-position-y: 50%;
-    color:rgba(135, 135, 135, 1);
+    color:rgb(0, 0, 0);
     border:1px solid rgba(182, 184, 191, 1);
 
 }
@@ -2032,6 +2040,8 @@ select{
 input{
     -webkit-appearance: none;
     -moz-appearance: none;
+    border-radius: 0px;
+    color: rgba(135, 135, 135, 1);
 }
 
 
