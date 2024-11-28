@@ -1156,6 +1156,10 @@ margin: 6% 0% 5% 0%
     width: 82%;
 }
 
+.work_in_russia{
+    width: 100%;
+}
+
 #work_in_russia {
     width: 97%;
     padding: 10px;
@@ -1284,6 +1288,10 @@ margin: 6% 0% 5% 0%
 }
 
 @media  screen and (max-width: 600px){
+    .work_in_russia{
+        width: 80%;
+    }
+
     #work_in_russia,
     #current_job_position{
         width: 405px; /* Ограничьте ширину */
@@ -1665,7 +1673,7 @@ margin: 6% 0% 5% 0%
 
 @media screen and (max-width:420px){
     #insert_phone_number{
-        width: 100%;
+        width: 92%;
     }
 
     #phone_num{
@@ -1673,7 +1681,7 @@ margin: 6% 0% 5% 0%
     }
 
     #insert_email{
-        width: 89%;
+        width: 85%;
     }
 
     .email{
