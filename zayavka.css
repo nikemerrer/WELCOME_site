@@ -435,6 +435,14 @@ margin: 6% 0% 5% 0%
     }
 }
 
+@media screen and (max-width:500px) {
+    .strinroad{
+        margin-top: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
 .podati_zayavka{
     margin-top: 5%;
     width: 100%;
